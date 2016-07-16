@@ -9,7 +9,7 @@
 title: James Washington
 email: jbwashington@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Finessing the web.
+  Finessing the web with accuracy.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jameswashington.me" # the base hostname & protocol for your site
 twitter_username: jbw014
@@ -17,3 +17,15 @@ github_username:  jbwashington
 
 # Build settings
 markdown: kramdown
+permalink: /:title/
+
+sass:
+  style: compressed
+  load_paths:
+    - _sass
+    - bower_components/bootstrap/scss
+    - bower_components/font-awesome/scss
+
+exclude:
+  - "bower_components"
+  - "bower.json"

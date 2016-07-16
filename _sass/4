@@ -1,0 +1,11 @@
+bower bootstrap#*               cached https://github.com/twbs/bootstrap.git#3.3.6
+bower bootstrap#*             validate 3.3.6 against https://github.com/twbs/bootstrap.git#*
+bower jquery#1.9.1 - 2          cached https://github.com/jquery/jquery-dist.git#2.2.4
+bower jquery#1.9.1 - 2        validate 2.2.4 against https://github.com/jquery/jquery-dist.git#1.9.1 - 2
+bower bootstrap#^3.3.6         install bootstrap#3.3.6
+bower jquery#1.9.1 - 2         install jquery#2.2.4
+
+bootstrap#3.3.6 bower_components/bootstrap
+└── jquery#2.2.4
+
+jquery#2.2.4 bower_components/jquery
