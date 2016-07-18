@@ -1,12 +1,12 @@
 {
-  "name": "browser-sync-jekyll",
+  "name": "diamonds-dancing",
   "version": "0.0.0",
-  "description": "A starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+  "description": "dev environment for Jekyll, GulpJS, and BrowserSync",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shane Osbourne",
+  "author": "James Washington",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^1.3.7",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync.git"
+    "url": "git+https://github.com/jbwashington/diamonds-dancing.git"
   },
   "keywords": [
     "jekyll",
@@ -26,7 +26,7 @@
     "browsersync"
   ],
   "bugs": {
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
+    "url": "https://github.com/jbwashington/diamonds-dancing.git/issues"
   },
-  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync"
+  "homepage": "https://github.com/jbwashington/diamonds-dancing#readme"
 }
