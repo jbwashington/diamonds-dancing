@@ -1,0 +1,21 @@
+a:link,
+a:visited {
+  color: #CE2029;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+pre {
+  font: 1rem Courier;
+  padding: 1rem;
+  position: relative;
+  white-space: pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  width: 650px;
+  word-wrap: break-word;
+}
