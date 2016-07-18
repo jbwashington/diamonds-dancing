@@ -1,5 +1,5 @@
 name: JAMES WASHINGTON
 markdown: redcarpet
-highlighter: pygments # or rouge or null
+highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 cdn: https://cdn.jameswashington.me

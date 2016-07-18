@@ -65,7 +65,7 @@
 
     <div class="site">
       <div class="header">
-        <h1 class="title"><a href="/">FINESSING THE WEB</a></h1>
+        <h1 class="title"><a href="/">JAMES WASHINGTON</a></h1>
         <a class="extra" href="#">home</a>
         <a class="extra" href="#">about</a>
         <a class="extra" href="#">CV</a>
@@ -90,18 +90,18 @@
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">touch ~/.bash_aliases
 </code></pre></div>
 <p>Open it with whatever text editor you prefer and add this:</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">function</span> play <span class="o">{</span>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">function </span>play <span class="o">{</span>
     <span class="c"># Skip DASH manifest for speed purposes. This might actually disable</span>
-    <span class="c"># being able to specify things like &#39;bestaudio&#39; as the requested format,</span>
+    <span class="c"># being able to specify things like 'bestaudio' as the requested format,</span>
     <span class="c"># but try anyway.</span>
-    <span class="c"># Get the best audio that isn&#39;t WebM, because afplay doesn&#39;t support it.</span>
-    <span class="c"># Use &quot;$*&quot; so that quoting the requested song isn&#39;t necessary.</span>
+    <span class="c"># Get the best audio that isn't WebM, because afplay doesn't support it.</span>
+    <span class="c"># Use "$*" so that quoting the requested song isn't necessary.</span>
     youtube-dl --default-search<span class="o">=</span>ytsearch: <span class="se">\</span>
                --youtube-skip-dash-manifest <span class="se">\</span>
-               --output<span class="o">=</span><span class="s2">&quot;${TMPDIR:-/tmp/}%(title)s-%(id)s.%(ext)s&quot;</span> <span class="se">\</span>
+               --output<span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">TMPDIR</span><span class="k">:-</span><span class="p">/tmp/</span><span class="k">}</span><span class="s2">%(title)s-%(id)s.%(ext)s"</span> <span class="se">\</span>
                --restrict-filenames <span class="se">\</span>
-               --format<span class="o">=</span><span class="s2">&quot;bestaudio[ext!=webm]&quot;</span> <span class="se">\</span>
-               --exec<span class="o">=</span>afplay <span class="s2">&quot;$*&quot;</span>
+               --format<span class="o">=</span><span class="s2">"bestaudio[ext!=webm]"</span> <span class="se">\</span>
+               --exec<span class="o">=</span>afplay <span class="s2">"</span><span class="nv">$*</span><span class="s2">"</span>
 <span class="o">}</span>
 </code></pre></div>
 <ol>
@@ -113,7 +113,7 @@
 <p><img src="http://i.giphy.com/11Jo6MieZMiPZu.gif" alt="Usher"></p>
 
 <p>If you just want to save any song to the current folder, just use this alias:</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">function</span> mp3 <span class="o">{</span>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">function </span>mp3 <span class="o">{</span>
     <span class="c"># Get the best audio from YouTube, convert it to MP3, and save it to the current</span>
     <span class="c"># directory.</span>
     youtube-dl --default-search<span class="o">=</span>ytsearch: <span class="se">\</span>
@@ -121,7 +121,7 @@
                --format<span class="o">=</span>bestaudio <span class="se">\</span>
                --extract-audio <span class="se">\</span>
                --audio-format<span class="o">=</span>mp3 <span class="se">\</span>
-               --audio-quality<span class="o">=</span><span class="m">1</span> <span class="s2">&quot;$*&quot;</span>
+               --audio-quality<span class="o">=</span>1 <span class="s2">"</span><span class="nv">$*</span><span class="s2">"</span>
 <span class="o">}</span>
 </code></pre></div>
 </div>
