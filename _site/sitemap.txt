@@ -1,0 +1,15 @@
+
+https://jameswashington.me/archive
+https://jameswashington.me/atom.xml
+https://jameswashington.me/categories
+https://jameswashington.me/
+https://jameswashington.me/pages
+https://jameswashington.me/rss.xml
+https://jameswashington.me/sitemap.txt
+https://jameswashington.me/tags
+
+https://jameswashington.me/2016/01/04/foods-to-look-out-for-in-2016
+https://jameswashington.me/2015/05/19/how-to-download-anything-from-youtube
+https://jameswashington.me/2015/05/16/bad-app-ideas
+https://jameswashington.me/2015/05/15/good-startup-ideas
+https://jameswashington.me/2015/05/07/dev-tools-i-use-everyday

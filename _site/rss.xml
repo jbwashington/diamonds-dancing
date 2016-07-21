@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+        <title>James Washington</title>
+        <description>James Washington - James Washington</description>
+        <link>https://jameswashington.me</link>
+        <atom:link href="https://jameswashington.me/rss.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Thu, 21 Jul 2016 14:12:08 -0500</lastBuildDate>
+        <pubDate>Thu, 21 Jul 2016 14:12:08 -0500</pubDate>
+        <ttl>60</ttl>
+
+
+        <item>
+                <title>3 Foods to Look Out For in 2016</title>
+                <description>&lt;p&gt;There have been some pretty solid food additions to my diet in 2016, but there are 3 that stand out particularly:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Heavy Whipping Cream&lt;/li&gt;
+  &lt;li&gt;Butter&lt;/li&gt;
+  &lt;li&gt;Garlic&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Heavy whipping cream took the place of half-and-half for morning  coffee, and it definitely kicks it up a notch.  I get all kinda work done.&lt;/p&gt;
+
+&lt;p&gt;Butter has been going in everything lately, from scrambled eggs to bread, even waffles.  I’ve been putting the butter in the microwave for a few seconds, just to help it spread easier.  I really hate it when the butter is hard and unable to be spread, it just destroys the waffle, especially if it’s a weak waffle to begin with.  Speaking of which, I’ve been putting the waffles in the toaster oven lately, and the difference is remarkable.  I find that the toaster burns the outside too much, but fails to cook the inside sufficiently, no matter what I set the dial to.&lt;/p&gt;
+
+&lt;p&gt;Garlic is going to be making waves in 2016, and it’s not just gonna be some fad ingredient.  I’ve been rocking with the garlic for a minute now, but I tried putting some in the rice cooker with a bay leaf and some white rice, and it’s sensational.  I plan to use the whole garlic cloves more in 2016, instead of that minced garlic in the jar.&lt;/p&gt;
+</description>
+                <link>https://jameswashington.me/2016/01/04/foods-to-look-out-for-in-2016</link>
+                <guid>https://jameswashington.me/2016/01/04/foods-to-look-out-for-in-2016</guid>
+                <pubDate>Mon, 04 Jan 2016 00:00:00 -0600</pubDate>
+        </item>
+
+        <item>
+                <title>Download And Play Any Song From Command Line Instantly</title>
+                <description>&lt;p&gt;You ever wanted to start playing “Let It Burn”, like really fast?&lt;/p&gt;
+
+&lt;p&gt;Me too, and this is the fastest way I’ve seen thus far.  This is how you do it.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Download and install [youtube-dl] by copying and pasting this into terminal:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl &amp;amp;&amp;amp; sudo chmod a+rx /usr/local/bin/youtube-dl
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Put this in your .bash_aliases file.  If you don’t already have it, drop it off in the home folder with the following command:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;touch ~/.bash_aliases
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Open it with whatever text editor you prefer and add this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;function play {
+    # Skip DASH manifest for speed purposes. This might actually disable
+    # being able to specify things like &#39;bestaudio&#39; as the requested format,
+    # but try anyway.
+    # Get the best audio that isn&#39;t WebM, because afplay doesn&#39;t support it.
+    # Use &quot;$*&quot; so that quoting the requested song isn&#39;t necessary.
+    youtube-dl --default-search=ytsearch: \
+               --youtube-skip-dash-manifest \
+               --output=&quot;${TMPDIR:-/tmp/}%(title)s-%(id)s.%(ext)s&quot; \
+               --restrict-filenames \
+               --format=&quot;bestaudio[ext!=webm]&quot; \
+               --exec=afplay &quot;$*&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Save, exit, and reopen terminal, and try it like this:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;play usher - let it burn&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.giphy.com/11Jo6MieZMiPZu.gif&quot; alt=&quot;Usher&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you just want to save any song to the current folder, just use this alias:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;function mp3 {
+    # Get the best audio from YouTube, convert it to MP3, and save it to the current
+    # directory.
+    youtube-dl --default-search=ytsearch: \
+               --restrict-filenames \
+               --format=bestaudio \
+               --extract-audio \
+               --audio-format=mp3 \
+               --audio-quality=1 &quot;$*&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+                <link>https://jameswashington.me/2015/05/19/how-to-download-anything-from-youtube</link>
+                <guid>https://jameswashington.me/2015/05/19/how-to-download-anything-from-youtube</guid>
+                <pubDate>Tue, 19 May 2015 00:00:00 -0500</pubDate>
+        </item>
+
+        <item>
+                <title>bad app ideas</title>
+                <description>&lt;ol&gt;
+  &lt;li&gt;push videos / music from everyone connected to a wifi hotspot to a queue that a dj / moderator controls.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+                <link>https://jameswashington.me/2015/05/16/bad-app-ideas</link>
+                <guid>https://jameswashington.me/2015/05/16/bad-app-ideas</guid>
+                <pubDate>Sat, 16 May 2015 00:00:00 -0500</pubDate>
+        </item>
+
+        <item>
+                <title>good startup ideas</title>
+                <description>&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Low-cost community-controlled security for countries with high crime and corruption, based on mesh network of solar powered raspberry pis that feed to public site, with no central point of failure, with anonymous reporting.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Programming tutorials for urban youth with Zaytoven beats playing in the background, and programming paradigms explained through the use of trap rhetoric and Migos references.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Autonomous DIY gardens that cultivate and harvest vegetables, crickets, and chicken eggs autonomously.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bitcoin prepaid cards that function similar to Greendot cards, but with no fees, other than tipping the blockchain.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Github for government, where policies are forked and merged by citizens.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+                <link>https://jameswashington.me/2015/05/15/good-startup-ideas</link>
+                <guid>https://jameswashington.me/2015/05/15/good-startup-ideas</guid>
+                <pubDate>Fri, 15 May 2015 00:00:00 -0500</pubDate>
+        </item>
+
+        <item>
+                <title>dev tools I use everyday</title>
+                <description>&lt;ol&gt;
+  &lt;li&gt;Vim Maximum Awesome&lt;/li&gt;
+  &lt;li&gt;Git&lt;/li&gt;
+  &lt;li&gt;iterm2&lt;/li&gt;
+  &lt;li&gt;Sublime Text 3&lt;/li&gt;
+  &lt;li&gt;Python IDLE&lt;/li&gt;
+  &lt;li&gt;SSH&lt;/li&gt;
+  &lt;li&gt;Dash&lt;/li&gt;
+  &lt;li&gt;Dropbox&lt;/li&gt;
+  &lt;li&gt;Slack&lt;/li&gt;
+  &lt;li&gt;Pomodoro Timer&lt;/li&gt;
+  &lt;li&gt;Whiteboard&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+                <link>https://jameswashington.me/2015/05/07/dev-tools-i-use-everyday</link>
+                <guid>https://jameswashington.me/2015/05/07/dev-tools-i-use-everyday</guid>
+                <pubDate>Thu, 07 May 2015 00:00:00 -0500</pubDate>
+        </item>
+
+
+</channel>
+</rss>
