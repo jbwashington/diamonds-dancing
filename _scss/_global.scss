@@ -1,41 +1,66 @@
+@import 'variables';
+
 ////////////////
 // BASE RULES //
 ////////////////
 
-// * {
-//   margin: 0;
-// }
 
-html,
+// STICKY FOOTER STYLES
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
+  background: rgba(51, 51, 51, 1);
+  color: $white;
+  font: 1rem $body-font;
   font-size: $body-size;
+  height: 100%;
+  margin-bottom: 60px; // Margin bottom by footer height
+}
+
+#particles-js {
+  position: relative;
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: no-repeat;
+  width: 100%;
   height: 100%;
 }
 
-body {
-  background: $white;
-  color: $black;
-  font: 1rem $body-font;
+code {
+  font-size: 80%;
 }
 
-// .page-wrap {
-//   min-height: 100%;
-//   // equal to footer height
-//   margin-bottom: $footer-height;
-// }
-// .page-wrap:after {
-//   content: "";
-//   display: block;
-// }
+* {
+  margin: 0;
+}
 
-// .container {
-//   margin: 0 auto;
-//   max-width: 740px;
-//   padding: 0 10px;
-//   width: 100%;
-// }
+.page-wrap {
+  margin-bottom: $footer-height; // equal to footer height
+  min-height: 100%;
+}
 
-h1, h2, h3, h4, h5, h6 {
+.page-wrap:after {
+  content: '';
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $header-font;
   font-weight: 900;
   margin: 1em 0 15px;
@@ -52,8 +77,8 @@ h1 {
 
 a {
   color: $brand-primary;
-  // text-transform: uppercase;
   line-height: .3rem;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -68,6 +93,13 @@ h4 {
   font-size: $h4-size;
   color: $brand-primary;
 }
+
+h6 {
+  line-height: 0;
+  font-size: smaller;
+  margin: 0;
+}
+
 
 p {
   margin: 15px 0;
@@ -185,4 +217,3 @@ strong, b {
 //     margin: 3px 0;
 //   }
 // }
-

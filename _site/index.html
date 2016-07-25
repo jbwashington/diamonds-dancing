@@ -2,7 +2,6 @@
 
 <html>
 
-
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,69 +9,195 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="//npmcdn.com/hack@0.2.0">
     <link rel="stylesheet" href="/css/main.css">
+
+
+    <script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = ‘absolute’;
+  stats.domElement.style.left = '0px’;
+  stats.domElement.style.top = '0px’;
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector(’.js-count-particles’);
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+requestAnimationFrame(update);
+</script>
+
+<script>
+  particlesJS(“particles-js”, {
+      "particles": {
+      "number": {
+      "value": 120,
+      "density": {
+      "enable": true,
+      "value_area": 600
+      }
+      },
+      "color": {
+      "value": “#cecece”
+      },
+      "shape": {
+      "type": “circle”,
+      "stroke": {
+      "width": 0,
+      "color":  "#cecece"
+      },
+      "polygon": {
+      "nb_sides": 5
+      },
+      },
+      "opacity": {
+        "value": 0.8,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.3,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 3,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color":  "#cecece",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": “none”,
+        "random": false,
+        "straight": false,
+        "out_mode": “out”,
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+      },
+        "interactivity": {
+          "detect_on": “canvas”,
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": “grab”
+            },
+            "onclick": {
+              "enable": true,
+              "mode": “push”
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 140,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+  });
+</script>
+
 
   </head>
 
-  <body class = "hack">
+  <body>
 
-    <div class="site">
-      <div class="header">
-        <h1 class="title"><a href="/">JAMES WASHINGTON</a></h1>
-        <a class="extra" href="#">home</a>
-        <a class="extra" href="#">about</a>
-        <a class="extra" href="#">CV</a>
+
+    <header>
+
+      <div id="particles-js">
+
+        <div class="pos-f-t">
+  <nav class="navbar navbar-light navbar-static-top bg-faded">
+    <div class="container">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+        <a class="navbar-brand" href="/">JAMES WASHINGTON</a>
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cv.html">CV</a>
+          </li>
+        </ul>
       </div>
-
-      <div id="home">
-
-  <h1>Posts</h1>
-
-  <ul class="posts">
-
-    
-
-      <li><span> 04 Jan 2016 </span> &raquo;
-        <a href="/2016/01/04/foods-to-look-out-for-in-2016.html"> 3 Foods to Look Out For in 2016 </a></li>
-
-    
-
-      <li><span> 19 May 2015 </span> &raquo;
-        <a href="/2015/05/19/how-to-download-anything-from-youtube.html"> Download And Play Any Song From Command Line Instantly </a></li>
-
-    
-
-      <li><span> 16 May 2015 </span> &raquo;
-        <a href="/2015/05/16/bad-app-ideas.html"> bad app ideas </a></li>
-
-    
-
-      <li><span> 15 May 2015 </span> &raquo;
-        <a href="/2015/05/15/kinda-good-app-ideas.html"> good startup ideas </a></li>
-
-    
-
-      <li><span> 07 May 2015 </span> &raquo;
-        <a href="/2015/05/07/dev-tools-i-use-everyday.html"> dev tools I use everyday </a></li>
-
-    
-  </ul>
+    </div>
+  </nav>
 </div>
 
 
+        <div class="container"> <div id="container home">
 
-      <div class="footer">
-        <div class="contact">
-          <p>
-            <a href="/pgp.txt">[PGP]</a><br />
-            <a href="mailto:jameswashington@gmail.com">[@]</a><br />
-            <a href="https://github.com/jbwashington">[gh]</a><br />
-            <a href="https://twitter.com/jbw014">[twitter]</a><br />
-          </p>
+  <p>I might be ugly but my code handsome.</p>
+
+</div>
+ </div>
+
+        <div class="container">
+  <footer>
+    <ul>
+      <li> <a href="mailto:jameswashington@gmail.com">[Email]</a> </li>
+      <li> <a href="//github.com/jbwashington">[Github]</a> </li>
+      <li> <a href="//twitter.com/jbw014">[Twitter]</a> </li>
+      <li> <a href="PGP.txt">[PGP]</a> </li>
+    </ul>
+  </footer>
+</div>
+
+
       </div>
-    </div>
-  </div>
+
+    </header>
 
   </body>
+
 </html>

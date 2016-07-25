@@ -2,7 +2,6 @@
 
 <html>
 
-
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,35 +9,30 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="//npmcdn.com/hack@0.2.0">
     <link rel="stylesheet" href="/css/main.css">
+
+
+    {% include particles.html %}
 
   </head>
 
-  <body class = "hack">
+  <body>
 
-    <div class="site">
-      <div class="header">
-        <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-        <a class="extra" href="#">home</a>
-        <a class="extra" href="#">about</a>
-        <a class="extra" href="#">CV</a>
+
+    <header>
+
+      <div id="particles-js">
+
+        {% include header.html %}
+
+        <div class="container"> {{ content }} </div>
+
+        {% include footer.html %}
+
       </div>
 
-      {{ content }}
-
-
-      <div class="footer">
-        <div class="contact">
-          <p>
-            <a href="/pgp.txt">[PGP]</a><br />
-            <a href="mailto:jameswashington@gmail.com">[@]</a><br />
-            <a href="https://github.com/jbwashington">[gh]</a><br />
-            <a href="https://twitter.com/jbw014">[twitter]</a><br />
-          </p>
-      </div>
-    </div>
-  </div>
+    </header>
 
   </body>
+
 </html>

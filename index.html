@@ -3,17 +3,8 @@ layout: default
 title: James Washington
 ---
 
-<div id="home">
+<div id="container home">
 
-  <h1>Posts</h1>
+  <p>I might be ugly but my code handsome.</p>
 
-  <ul class="posts">
-
-    {% for post in site.posts %}
-
-      <li><span> {{ post.date | date_to_string }} </span> &raquo;
-        <a href="{{ post.url }}"> {{ post.title }} </a></li>
-
-    {% endfor %}
-  </ul>
 </div>

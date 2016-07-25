@@ -2,4 +2,3 @@ name: JAMES WASHINGTON
 markdown: redcarpet
 highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
-cdn: https://cdn.jameswashington.me
