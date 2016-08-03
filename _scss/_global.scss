@@ -4,55 +4,16 @@
 // BASE RULES //
 ////////////////
 
-
-// STICKY FOOTER STYLES
-
 html {
-  min-height: 100%;
-  position: relative;
+  background: url('https://media.giphy.com/media/H9GdRg90WerxC/giphy.gif') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
 }
 
 body {
-  background: rgba(51, 51, 51, 1);
+  background-color: rgba(51, 51, 51, .9);
   color: $white;
-  font: 1rem $body-font;
-  font-size: $body-size;
-  height: 100%;
-  margin-bottom: 60px; // Margin bottom by footer height
-}
-
-#particles-js {
-  position: relative;
-  background-attachment: fixed;
-  background-position: top left;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
-code {
-  font-size: 80%;
-}
-
-* {
-  margin: 0;
-}
-
-.page-wrap {
-  margin-bottom: $footer-height; // equal to footer height
-  min-height: 100%;
-}
-
-.page-wrap:after {
-  content: '';
-  display: block;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
+  height: inherit;
 }
 
 h1,
@@ -90,8 +51,8 @@ h3 {
 }
 
 h4 {
-  font-size: $h4-size;
   color: $brand-primary;
+  font-size: $h4-size;
 }
 
 h6 {
@@ -102,9 +63,9 @@ h6 {
 
 
 p {
-  margin: 15px 0;
-  font-size: $body-size;
+  // margin: 15px 0;
   font-family: $body-font;
+  font-size: $body-size;
 }
 
 a {
@@ -163,29 +124,14 @@ strong, b {
 // }
 
 // // Specify the color of the selection
-// ::-moz-selection {
-//   color: $white;
-//   background: magenta;
-// }
-// ::selection {
-//   color: $white;
-//   background: magenta;
-// }
-
-///////////////////////////////////////////////////
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-///////////////////////////////////////////////////
-
-// .clearfix:before,
-// .clearfix:after {
-//   content: " ";
-//   display: table;
-// }
-
-// .clearfix:after {
-//   clear: both;
-// }
+::-moz-selection {
+  background: magenta;
+  color: $white;
+}
+::selection {
+  background: magenta;
+  color: $white;
+}
 
 // .site-info {
 //   float: left;

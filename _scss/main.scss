@@ -1,10 +1,14 @@
-@import './bower_components/bootstrap/scss/bootstrap-flex.scss';
+@import './bower_components/bootstrap/scss/bootstrap-flex';
 @import 'reset';
 @import 'variables';
 @import 'global';
+// @import 'cover';
 // @import 'navbar';
 // @import 'footer';
 // @import 'posts';
 // @import 'syntax';
 // @import 'svg-icons';
 // @import 'highlights';
+@import 'typography';
+@import 'landing-content';
+@import 'logo';

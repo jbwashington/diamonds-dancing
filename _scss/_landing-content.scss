@@ -1,0 +1,19 @@
+@import 'variables';
+
+.landing-content {
+  height: 100%;
+  width: 100%;
+
+  p {
+    font-family: $header-font;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    padding-bottom: .7rem;
+    text-transform: uppercase;
+  }
+
+  svg {
+    height: 50%;
+    width: 50%;
+  }
+}

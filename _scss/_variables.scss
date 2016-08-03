@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:900|Roboto);
+@import url(https://fonts.googleapis.com/css?family=Lato:900|Roboto+Condensed:700);
 
 ///////////////
 // ========= //
@@ -9,8 +9,8 @@
 /////////
 // Colors
 /////////
-$neon            : #bf0;
 
+$neon            : #bf0;
 $brand-primary   : $neon;
 $brand-secondary : $neon;
 $brand-tertiary  : $neon;
@@ -18,6 +18,7 @@ $brand-tertiary  : $neon;
 ////////////////////
 // Primary Colors //
 ////////////////////
+
 $black      : #000;
 $darkergray : #222;
 $darkgray   : #333;
@@ -30,8 +31,8 @@ $white      : #fff;
 ////////////////////////////////
 // Styling Color Abstractions //
 ////////////////////////////////
-$bg-color     : $black;
-$body-color   : $white;
+$bg-color     : $white;
+$body-color   : $darkgray;
 $header-color : $neon;
 
 
@@ -41,7 +42,7 @@ $header-color : $neon;
 /////////////////
 $helvetica   : Helvetica, Arial, sans-serif;
 $lato        : "lato", helvetica, sans-serif;
-$roboto      : "roboto", arial, sans-serif;
+$roboto      : "roboto condensed", arial, sans-serif;
 $body-font   : $roboto;
 $header-font : $lato;
 

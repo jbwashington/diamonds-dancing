@@ -4,8 +4,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url(https://fonts.googleapis.com/css?family=Lato:900|Roboto);
-@import url(https://fonts.googleapis.com/css?family=Lato:900|Roboto);
+@import url(https://fonts.googleapis.com/css?family=Lato:900|Roboto+Condensed:700);
+@import url(https://fonts.googleapis.com/css?family=Lato:900|Roboto+Condensed:700);
+@import url(https://fonts.googleapis.com/css?family=Lato:900|Roboto+Condensed:700);
+@import url(https://fonts.googleapis.com/css?family=Lato:900|Roboto+Condensed:700);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -4832,44 +4834,14 @@ table {
   box-sizing: border-box; }
 
 html {
-  min-height: 100%;
-  position: relative; }
-
-body {
-  background: #333333;
-  color: #fff;
-  font: 1rem "roboto", arial, sans-serif;
-  font-size: 0.8rem;
-  height: 100%;
-  margin-bottom: 60px; }
-
-#particles-js {
-  position: relative;
-  background-attachment: fixed;
-  background-position: top left;
-  background-repeat: no-repeat;
-  width: 100%;
+  background: url("https://media.giphy.com/media/H9GdRg90WerxC/giphy.gif") no-repeat center center fixed;
+  background-size: cover;
   height: 100%; }
 
-code {
-  font-size: 80%; }
-
-* {
-  margin: 0; }
-
-.page-wrap {
-  margin-bottom: 12rem;
-  min-height: 100%; }
-
-.page-wrap:after {
-  content: '';
-  display: block; }
-
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%; }
+body {
+  background-color: rgba(51, 51, 51, 0.9);
+  color: #fff;
+  height: inherit; }
 
 h1,
 h2,
@@ -4905,8 +4877,8 @@ h3 {
   font-size: 2.1rem; }
 
 h4 {
-  font-size: 1.8rem;
-  color: #bf0; }
+  color: #bf0;
+  font-size: 1.8rem; }
 
 h6 {
   line-height: 0;
@@ -4914,9 +4886,8 @@ h6 {
   margin: 0; }
 
 p {
-  margin: 15px 0;
-  font-size: 0.8rem;
-  font-family: "roboto", arial, sans-serif; }
+  font-family: "roboto condensed", arial, sans-serif;
+  font-size: 0.8rem; }
 
 a {
   color: #bf0;
@@ -4949,3 +4920,24 @@ em, i {
 
 strong, b {
   font-weight: bold; }
+
+::-moz-selection {
+  background: magenta;
+  color: #fff; }
+
+::selection {
+  background: magenta;
+  color: #fff; }
+
+.landing-content {
+  height: 100%;
+  width: 100%; }
+  .landing-content p {
+    font-family: "lato", helvetica, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    padding-bottom: .7rem;
+    text-transform: uppercase; }
+  .landing-content svg {
+    height: 50%;
+    width: 50%; }
