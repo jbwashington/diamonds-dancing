@@ -56,8 +56,8 @@ h4 {
 }
 
 h6 {
-  line-height: 0;
   font-size: smaller;
+  line-height: 0;
   margin: 0;
 }
 
@@ -109,20 +109,6 @@ strong, b {
   font-weight: bold;
 }
 
-// img {
-//   max-width: 100%;
-// }
-
-// Fixes images in popup boxes from Google Translate
-// .gmnoprint img {
-//   max-width: none;
-// }
-
-// .date {
-//   font-style: italic;
-//   color: $gray;
-// }
-
 // // Specify the color of the selection
 ::-moz-selection {
   background: magenta;
@@ -132,34 +118,3 @@ strong, b {
   background: magenta;
   color: $white;
 }
-
-// .site-info {
-//   float: left;
-
-//   @include mobile {
-//     float: none;
-//     display: block;
-//     margin: 0 auto;
-//   }
-// }
-
-// .site-name {
-//   margin: 0;
-//   color: $white;
-//   cursor: pointer;
-//   font-family: $header-font;
-//   font-weight: 300;
-//   font-size: $site-name-size;
-//   font-transform: uppercase;
-//   letter-spacing: 1px;
-// }
-
-// .site-description {
-//   margin: -5px 0 0 0;
-//   color: $white;
-//   font-size: $site-description-size;
-
-//   @include mobile {
-//     margin: 3px 0;
-//   }
-// }

@@ -4881,8 +4881,8 @@ h4 {
   font-size: 1.8rem; }
 
 h6 {
-  line-height: 0;
   font-size: smaller;
+  line-height: 0;
   margin: 0; }
 
 p {
@@ -4941,3 +4941,7 @@ strong, b {
   .landing-content svg {
     height: 50%;
     width: 50%; }
+
+.logo {
+  width: 6rem;
+  height: auto; }
