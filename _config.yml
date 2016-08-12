@@ -1,4 +1,5 @@
-name: JAMES WASHINGTON
+name: James Washington
 markdown: redcarpet
 highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+site: "https://jameswashington.me"
