@@ -1,3 +1,5 @@
+@import 'helpers/mixins';
+
 ///////////////
 // ========= //
 // VARIABLES //
@@ -49,7 +51,7 @@ $light-blue: #7e8e91;
 $green: #a6e22e;
 $pale-yellow: #e6db74;
 $orange: #fd971f;
-$red: #f00;
+$red: #ed1c24;
 $magenta: #f92672;
 
 
@@ -65,7 +67,7 @@ $gray-lighter: #bcbcbc;
 // Element Sizes //
 ///////////////////
 
-$footer-height : 12rem;
+// $footer-height : 12rem;
 
 /////////////////
 // Font stacks //
@@ -81,7 +83,7 @@ $header-font : $lato;
 ////////////////
 // Text Sizes //
 ////////////////
-
+$body-size             : 16px;
 $h1-size               : 2.7rem;
 $h2-size               : 2.4rem;
 $h3-size               : 2.1rem;
@@ -89,10 +91,9 @@ $h4-size               : 1.8rem;
 $h5-size               : 2rem;
 $h6-size               : 2rem;
 $h7-size               : 2rem;
-$body-size             : .8rem;
 $code-size             : 2rem;
 $li-size               : $body-size;
 $ul-size               : $body-size;
 $site-name-size        : 3rem;
 $site-description-size : 1.6rem;
-$nav-size              : .7rem;
+$nav-size              : .8rem;

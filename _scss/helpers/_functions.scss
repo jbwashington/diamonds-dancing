@@ -1,0 +1,8 @@
+////////////////////////////////////////////////////////
+// create a fallback to pixels when rem isn’t supported.
+////////////////////////////////////////////////////////
+
+@function calculaterem($size) {
+  $remsize: $size / 16px;
+  @return $remsize * 1rem;
+}

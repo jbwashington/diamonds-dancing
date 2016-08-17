@@ -1,0 +1,99 @@
+@import 'helpers/functions';
+@import 'vendors/modernizr';
+
+// Set a rem font size with pixel fallback
+//////////////////////////////////////////
+@mixin font-size($size) {
+  // font-size: $size;
+  font-size: calculaterem($size);
+}
+
+// SVG background images with PNG and retina fallback
+/////////////////////////////////////////////////////
+
+$image-path: './img' !default;
+$fallback-extension: 'png' !default;
+$retina-suffix: '@2x';
+
+@mixin background-image($name, $size:false) {
+  background-image: url(#{$image-path}/#{$name}.svg);
+  @if($size){
+    background-size: $size;
+  }
+
+  .no-svg & {
+    background-image: url(#{$image-path}/#{$name}.#{$fallback-extension});
+
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url(#{$image-path}/#{$name}#{$retina-suffix}.#{$fallback-extension});
+    }
+  }
+}
+
+//  apply the mixin to the div that surrounds your svg
+// get the svg width and height from the viewbox attribute of the SVG
+// see: http://mimoymima.com/sass-mixin-responsive-svgs/
+////////////////////////////////////////////////////////
+
+@mixin responsive-svg($svgwidth, $svgheight, $containerwidth){
+  width: $containerwidth; // sizes the svg
+  margin: 0 auto; // centers the svg
+  height: 0;
+  padding-top: #{($svgheight/$svgwidth)*$containerwidth};
+  position: relative;
+
+  svg {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+}
+// vendor prefixes for animations and keyframes
+///////////////////////////////////////////////
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+// vendor prefixes for transitions
+//////////////////////////////////
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// cross-broser opacity
+///////////////////////
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+

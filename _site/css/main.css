@@ -4874,8 +4874,9 @@ h6 {
   margin: 0; }
 
 p {
+  font-size: 1rem;
   font-family: "roboto condensed", arial, sans-serif;
-  font-size: 0.8rem; }
+  line-height: 1.7; }
 
 ul,
 ol {
@@ -4899,7 +4900,7 @@ ol ul {
   list-style-type: circle; }
 
 li {
-  font-size: 0.8rem; }
+  font-size: 16px; }
 
 em,
 i {
@@ -4910,19 +4911,13 @@ b {
   font-weight: bold; }
 
 a {
-  color: #007FFF;
+  color: #ed1c24;
   transition: all .35s; }
 
 a:hover,
 a:focus {
-  color: #222;
+  color: #ed1c24;
   outline: 0; }
-
-p {
-  font-size: 17px;
-  line-height: 1.7;
-  margin-bottom: 20px;
-  font-family: 'Helvetica Neue',Arial,sans-serif; }
 
 .text-normal {
   font-family: 'Helvetica Neue',Arial,sans-serif; }
@@ -5447,6 +5442,19 @@ aside {
 textarea {
   resize: none; }
 
-.opener svg {
-  height: 50%;
-  width: auto; }
+.opener {
+  background-image: url(./img/opener.svg);
+  width: 7rem;
+  margin: 0 auto;
+  height: 0;
+  padding-top: 7rem;
+  position: relative; }
+  .no-svg .opener {
+    background-image: url(./img/opener.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      .no-svg .opener {
+        background-image: url(./img/opener@2x.png); } }
+  .opener svg {
+    left: 0;
+    position: absolute;
+    top: 0; }

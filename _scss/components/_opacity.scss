@@ -1,0 +1,5 @@
+@import 'helpers/mixins';
+
+.faded-text {
+  @include opacity(.8);
+}
