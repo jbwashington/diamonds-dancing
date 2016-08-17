@@ -4832,6 +4832,45 @@ table {
 *, *:before, *:after {
   box-sizing: border-box; }
 
+.svg-container {
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 100%;
+  position: relative;
+  vertical-align: middle;
+  width: 100%; }
+
+.svg-container-2x-height {
+  padding-bottom: 200%; }
+
+.svg-container {
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 100%;
+  position: relative;
+  vertical-align: middle;
+  width: 100%; }
+
+.svg-container-2x-height {
+  padding-bottom: 200%; }
+
+.svg-container {
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 100%;
+  position: relative;
+  vertical-align: middle;
+  width: 100%; }
+
+.svg-container-2x-height {
+  padding-bottom: 200%; }
+
 h1,
 h2,
 h3,
@@ -4966,6 +5005,19 @@ hr.primary {
   border-color: #007FFF;
   opacity: 1; }
 
+.svg-container {
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 100%;
+  position: relative;
+  vertical-align: middle;
+  width: 100%; }
+
+.svg-container-2x-height {
+  padding-bottom: 200%; }
+
 .btn.btn-primary {
   background-color: transparent;
   border: 1px solid #007FFF;
@@ -4985,6 +5037,36 @@ hr.primary {
 .btn-xl {
   padding: 15px 30px;
   font-size: 20px; }
+
+.navbar-brand img {
+  height: auto;
+  padding: 10px;
+  width: 50px; }
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    left: 50%;
+    padding: 0;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    .navbar-brand img {
+      height: 100%;
+      padding: 7px 14px;
+      width: auto; } }
+
+.svg-container {
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 100%;
+  position: relative;
+  vertical-align: middle;
+  width: 100%; }
+
+.svg-container-2x-height {
+  padding-bottom: 200%; }
 
 html,
 body {
@@ -5442,19 +5524,25 @@ aside {
 textarea {
   resize: none; }
 
-.opener {
-  background-image: url(./img/opener.svg);
-  width: 7rem;
-  margin: 0 auto;
+.svg-container {
+  display: inline-block;
   height: 0;
-  padding-top: 7rem;
-  position: relative; }
-  .no-svg .opener {
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 100%;
+  position: relative;
+  vertical-align: middle;
+  width: 100%; }
+
+.svg-container-2x-height {
+  padding-bottom: 200%; }
+
+.svg-container {
+  background-image: url(./img/opener.svg);
+  margin: 0 auto auto 0;
+  max-width: 90%; }
+  .no-svg .svg-container {
     background-image: url(./img/opener.png); }
     @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-      .no-svg .opener {
+      .no-svg .svg-container {
         background-image: url(./img/opener@2x.png); } }
-  .opener svg {
-    left: 0;
-    position: absolute;
-    top: 0; }

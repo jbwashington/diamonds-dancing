@@ -1,8 +1,9 @@
 @import 'helpers/mixins';
 
-.opener {
+.svg-container {
   @include background-image('opener');
-  @include responsive-svg(7rem, 7rem, 7rem); // arguments are ($svgwidth, $svgheight, $containerwidth)
-  // margin: 0 auto auto 0;
-  // max-width: 80%;
+  @include svg-responsive(7rem, 7rem, 100%); // arguments are ($svgwidth, $svgheight, $containerwidth)
+  margin: 0 auto auto 0;
+  max-width: 90%;
 }
+

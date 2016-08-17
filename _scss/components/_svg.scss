@@ -1,0 +1,21 @@
+@import 'helpers/mixins';
+
+// write this once, and apply this class to all svgs and absolutely position them top left inline block:
+
+.svg {
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; // only required for <img />
+}
+
+// .navbar-brand {
+//   svg {
+//     @include background-image('logo');
+//     @include svg-responsive(7rem, 7rem, 100%); // arguments are ($svgwidth, $svgheight, $containerwidth)
+//     height: 100%;
+//     padding: 15px;
+//     width: auto;
+//   }
+// }

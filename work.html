@@ -1,28 +1,28 @@
 ---
 layout: default
 images:
-  - image_path: /images/cakes/apple-pie.jpg
-    title: Apple Pie
-  - image_path: /images/cakes/birthday-cake.jpg
-    title: Birthday Cake
-  - image_path: /images/cakes/black-forest.jpg
-    title: Black Forest
-  - image_path: /images/cakes/brownie.jpg
-    title: Brownie
-  - image_path: /images/cakes/cheese-cake.jpg
-    title: Cheese Cake
-  - image_path: /images/cakes/chocolate-cake.jpg
-    title: Chocolate Cake
-  - image_path: /images/cakes/fruit-cake.jpg
-    title: Fruit Cake
-  - image_path: /images/cakes/lamington.jpg
-    title: Lamington
-  - image_path: /images/cakes/lemon-cake.jpg
-    title: Lemon Cake
+  - image_path: /img/flyink-thumb.jpg
+    title: Fly Ink
+  - image_path: /img/coulson-thumb.jpg
+    title: Coulson Drive Management
+  - image_path: /img/3pf-thumb.jpg
+    title: 3 Phase Fitness
+  - image_path: /img/connectchurch-thumb.jpg
+    title: The Connect Church
+  - image_path: /img/gapsnow-thumb.jpg
+    title: Grands As Parents
+  - image_path: /img/ln-thumb.jpg
+    title: Londyn Nichole
+  - image_path: /img/luckybirds-thumb.jpg
+    title: Lucky Birds Unlimited
+  - image_path: /img/nfbpaglr-thumb.jpg
+    title: National Foundation of Black Public Administrators
+  - image_path: /img/uark-thumb.jpg
+    title: Center For Community Engagement
 ---
 
 <ul class="photo-gallery">
-  {% for image in page.images %}
-    <li><img src="{{ image.image_path }}" alt="{{ image.title}}"/></li>
+  {% for image in page.img %}
+  <li><img src="{{ image.image_path }}" alt="{{ image.title}}"/></li>
   {% endfor %}
 </ul>
