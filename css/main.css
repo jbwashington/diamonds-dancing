@@ -5038,23 +5038,6 @@ hr.primary {
   padding: 15px 30px;
   font-size: 20px; }
 
-.navbar-brand img {
-  height: auto;
-  padding: 10px;
-  width: 50px; }
-
-@media only screen and (max-width: 768px) {
-  .navbar-brand {
-    left: 50%;
-    padding: 0;
-    position: absolute;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
-    .navbar-brand img {
-      height: 100%;
-      padding: 7px 14px;
-      width: auto; } }
-
 .svg-container {
   display: inline-block;
   height: 0;
@@ -5075,7 +5058,8 @@ body {
 
 body {
   font-family: "roboto condensed", arial, sans-serif;
-  tap-highlight-color: #f92672; }
+  tap-highlight-color: #f92672;
+  padding-top: 4rem; }
   body .modal-open {
     padding-right: 0 !important; }
 
@@ -5461,6 +5445,7 @@ header {
   min-height: auto;
   text-align: center;
   color: #001A33;
+  margin: 0;
   width: 100%;
   background-color: #fff; }
 

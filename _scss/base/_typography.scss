@@ -5,6 +5,14 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 
+body {
+  text-shadow: 0 0 1 #909090;
+  font-family: 'Montserrat','Helvetica Neue',Arial,sans-serif;
+  color: $darkgray;
+  tap-highlight-color: $magenta;
+  top: 0;
+}
+
 
 h1,
 h2,
@@ -28,6 +36,13 @@ a {
   line-height: .3rem;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all .35s;
+
+  &:hover,
+  &:focus {
+    color: $red;
+    outline: 0;
+  }
 
   &:hover,
   &:active {
@@ -35,12 +50,13 @@ a {
   }
 }
 
-h2 {
-  font-size: $h2-size;
-}
 
-.call-to-action h2 {
+.call-to-action {
   margin: 0 auto 20px;
+
+  h2 {
+    font-size: $h2-size;
+  }
 }
 
 h3 {
@@ -107,21 +123,8 @@ b {
   font-weight: bold;
 }
 
-
-a {
-  color: $red;
-  transition: all .35s;
-}
-
-a:hover,
-a:focus {
-  color: $red;
-  outline: 0;
-}
-
-
 .text-normal {
-  font-family:'Helvetica Neue',Arial,sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .wide-space {
