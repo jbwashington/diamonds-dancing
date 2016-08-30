@@ -1,16 +1,23 @@
 @import 'vendors/bootstrap';
-@import 'base/reset';
+@import 'vendors/font-awesome';
+
 @import 'helpers/variables';
-@import 'base/typography';
 @import 'helpers/mixins';
 @import 'helpers/functions';
+
+@import 'base/reset';
+@import 'base/typography';
+
 @import 'components/buttons';
-@import 'components/cover';
 @import 'components/selection';
 @import 'components/code';
-@import 'layout/navbar';
+
+@import 'layout/nav';
 @import 'layout/header';
+@import 'layout/body';
 @import 'layout/footer';
+
 @import 'themes/default';
+
 @import 'pages/home';
 @import 'pages/blog';

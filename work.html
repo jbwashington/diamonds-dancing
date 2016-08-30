@@ -1,6 +1,6 @@
 ---
 layout: default
-images:
+image:
   - image_path: /img/flyink-thumb.jpg
     title: Fly Ink
   - image_path: /img/coulson-thumb.jpg
@@ -22,7 +22,22 @@ images:
 ---
 
 <ul class="photo-gallery">
-  {% for image in page.img %}
-  <li><img src="{{ image.image_path }}" alt="{{ image.title}}"/></li>
+  {% for image in page.images %}
+    <li><img src="{{ image.image_path }}" alt="{{ image.title }}"/></li>
   {% endfor %}
 </ul>
+
+<!-- <div class="container"> -->
+<!--   <div class="row"> -->
+<!--     {% for image in page.img %} -->
+<!--     <div class="col-xs-12 col-sm-6"> -->
+<!--       <div class="card"> -->
+<!--         <img class="card-img-top" src="{{ image.image_path }}" alt="{{ image.title }}"/> -->
+<!--       </div> -->
+<!--       <div class="card-block"> -->
+<!--         <p class="card-text">{{ image.title }}</p> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--     {% endfor %} -->
+<!--   </div> -->
+<!-- </div> -->

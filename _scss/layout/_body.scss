@@ -1,0 +1,19 @@
+@import 'helpers/variables';
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: $bg-color;
+  color: $body-color;
+  font-family: $body-font;
+  height: inherit;
+  tap-highlight-color: $brand-tertiary;
+}
+
+.content {
+  font-family: $body-font;
+}

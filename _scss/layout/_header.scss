@@ -1,63 +1,26 @@
+@import 'vendors/bootstrap';
+@import 'helpers/variables';
+@import 'base/typography';
+
+/////////
+// HEADER
+/////////
 
 header {
-  background-color: $bg-color;
-  color: $red;
-  display: block;
-  margin: 0;
-  min-height: auto;
-  position: relative;
-  top: 0;
-  width: 100%;
 
-  .opener {
-    max-height: 90vh;
-    max-width: 90vw;
+  h2 {
+    color: $header-color;
+    font-family: $header-font;
+    font-size: $h2-size;
+    font-weight: 500;
+    padding: 1rem 2rem .4rem .8rem;
+  }
+
+  .intro {
+    font-size: $h2-size;
   }
 }
 
-// header .header-content {
-//   position: relative;
-//   width: 100%;
-//   padding: 100px 15px;
-//   text-align: center;
-//   z-index: 999;
-// }
-
-// header .header-content .inner h1 {
-//   margin-top: 0;
-//   margin-bottom: 0;
-// }
-
-// header .header-content .inner p {
-//   margin-bottom: 50px;
-//   font-size: 16px;
-//   font-weight: 300;
-//   color: #222;
-// }
-
-// @media(min-width:34em) {
-//   .icon-lg {
-//     font-size: 80px;
-//   }
-
-//   header {
-//     min-height: 100%;
-//   }
-
-//   header .header-content .inner {
-//     margin-right: auto;
-//     margin-left: auto;
-//     max-width: 1000px;
-//   }
-
-//   header .header-content .inner h1 {
-//     font-size: 53px;
-//   }
-
-//   header .header-content .inner p {
-//     margin-right: auto;
-//     margin-left: auto;
-//     max-width: 80%;
-//     font-size: 18px;
-//   }
-// }
+.splash {
+  padding: 1.6rem;
+}

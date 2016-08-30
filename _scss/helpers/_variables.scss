@@ -1,4 +1,6 @@
 @import 'helpers/mixins';
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
 
 ///////////////
 // ========= //
@@ -6,40 +8,39 @@
 // ========= //
 ///////////////
 
-/////////
-// Colors
-/////////
-
-$neon            : #bf0;
-$brand-primary   : $neon;
-$brand-secondary : $neon;
-$brand-tertiary  : $neon;
-
 ////////////////////
 // Primary Colors //
 ////////////////////
 
 $black      : #000;
-$darkergray : #222;
+$darkergray : #231f20;
 $darkgray   : #333;
 $gray       : #9c9298;
 $lightgray  : #eee;
-$white      : #fff;
+$white      : #fbfbfb;
 $magenta    : #f0f;
+$neon       : rgb(187, 255, 0);
+$red        : #ff305b;
 
+
+/////////
+// Colors
+/////////
+$brand-primary   : $red;
+$brand-secondary : $gray;
+$brand-tertiary  : $neon;
 
 
 ////////////////////////////////
 // Styling Color Abstractions //
 ////////////////////////////////
 $bg-color     : $white;
-$body-color   : $darkgray;
-$header-color : $neon;
+$body-color   : $darkergray;
+$header-color : $red;
 
 ////////////////////
 // Molokai Colors //
 ////////////////////
-
 $molokai-background: #1b1d1e;
 $near-black: #080800;
 $near-white: #f8f8f0;
@@ -63,22 +64,14 @@ $gray-light: #808080;
 $gray-lighter: #bcbcbc;
 
 
-///////////////////
-// Element Sizes //
-///////////////////
-
-// $footer-height : 12rem;
-
 /////////////////
 // Font stacks //
 /////////////////
 
-$helvetica   : Helvetica, Arial, sans-serif;
-$lato        : "lato", helvetica, sans-serif;
-$inconsolata : "Inconsolata", "Courier", monospace;
-$roboto      : "roboto condensed", arial, sans-serif;
-$body-font   : $roboto;
-$header-font : $lato;
+$inconsolata : "inconsolata", "courier", monospace;
+$roboto      : "roboto", arial, sans-serif;
+$body-font   : $inconsolata;
+$header-font : $roboto;
 
 ////////////////
 // Text Sizes //
@@ -97,3 +90,10 @@ $ul-size               : $body-size;
 $site-name-size        : 2rem;
 $site-description-size : 1.6rem;
 $nav-size              : 1rem;
+
+
+///////////////////
+// Element Sizes //
+///////////////////
+
+$opener-size : 12rem;

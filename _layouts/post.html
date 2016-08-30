@@ -1,10 +1,14 @@
 ---
 layout: default
+title: posts
 ---
 
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
 <div class="container">
-  {{ content }}
+  <div class="row">
+    <article class="p-a-3">
+      <h1 class='post-title'>{{ page.title }}</h1>
+      <div class="post-date">{{ page.date | date: "%b %-d, %Y" }}</div>
+      {{ content }}
+    </article>
+  </div>
 </div>

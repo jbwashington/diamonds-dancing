@@ -1,737 +1,78 @@
 <!DOCTYPE html>
+
 <html>
+
   <head>
   <meta charset="utf-8">
   <title></title>
   <meta name="description" content="" />
+  <meta name="author" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
-  <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" />
-  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-  <body>
-    <div class="outer">
-      <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-      ☰
-    </button>
-    <a class="navbar-brand xs-pull-right" href="/">
-      <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" x="0" y="0" width="100" height="100" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;version:1"><style>.a{stroke-miterlimit:10;stroke:#000;}</style><switch><foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1"/><g><g><g><polygon points="43.1 90 16.2 82 16.2 89.6 43.1 97.6 88 72.4 88 65.4 "/><polygon points="67 66.8 17.1 48.9 16.9 55.8 59.5 70.9 "/></g><g><polygon points="40.5 47.3 49.4 49.9 49.4 23 40.5 20.4 "/><polygon points="70 3 70 8.1 71.9 8.6 71.8 30.5 71.8 35.5 71.8 37.1 79.5 32.8 79.5 6 "/><polygon points="54.9 17.3 56.7 17.8 56.7 39.6 56.7 44.2 56.7 45.7 63.9 41.6 63.9 12.8 54.9 10.2 "/></g></g></g></switch></svg>
 
-    </a>
-    <div class="collapse navbar-toggleable-xs" id="collapsingNavbar">
-      <ul class="nav navbar-nav pull-xs-right">
-        <li class="nav-item">
-          <a class="nav-link page-scroll" href="#one">Cards</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link page-scroll" href="#two">Flexbox</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link page-scroll" href="#three">5 Tiers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link page-scroll" href="#four">More</a>
-        </li>
-      </ul>
-      <!-- <ul class="nav navbar-nav pull-xs-right"> -->
-      <!--   <li class="nav-item"> -->
-      <!--     <a class="nav-link page-scroll" data-toggle="modal" title="A free Bootstrap theme" href="#aboutModal">About</a> -->
-      <!--   </li> -->
-      <!-- </ul> -->
+  <body>
+
+    <nav class="navbar">
+  <a class="navbar-brand" href="/">
+    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" class="svg-logo" x="0" y="0" width="20%" height="auto" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;version:1"><style>.a{stroke-miterlimit:10;stroke:#000;}</style><switch><foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1"/><g><g><g><polygon points="43.1 90 16.2 82 16.2 89.6 43.1 97.6 88 72.4 88 65.4 "/><polygon points="67 66.8 17.1 48.9 16.9 55.8 59.5 70.9 "/></g><g><polygon points="40.5 47.3 49.4 49.9 49.4 23 40.5 20.4 "/><polygon points="70 3 70 8.1 71.9 8.6 71.8 30.5 71.8 35.5 71.8 37.1 79.5 32.8 79.5 6 "/><polygon points="54.9 17.3 56.7 17.8 56.7 39.6 56.7 44.2 56.7 45.7 63.9 41.6 63.9 12.8 54.9 10.2 "/></g></g></g></switch></svg>
+
+  </a>
+  <button class="navbar-toggler navbar-custom" type="button" data-toggle="modal" data-target="#gridSystemModal" aria-controls="gridSystemModal" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+    <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+    <div class="modal-menu" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <ul class="center-block">
+                <li class="modal-nav-items"><a href="about.html">about</a></li>
+                <li class="modal-nav-items"><a href="blog.html">blog</a></li>
+                <!-- <li class="modal-nav-items"><a href="work.html">work</a></li> -->
+              </ul>
+            </div>
+            <div class="row">
+              <ul class="center-block">
+                <li class="list-inline-item"><a href="#"><i class="fa fa-2x fa-instagram social"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-2x fa-twitter social"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-2x fa-snapchat social"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+
 </nav>
 
-      <div class="inner">
-        <div class="container">
-          <div class="content">
-  <header>
-  <div class="opener">
-    <div class="container">
-      <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500"><style>.a{fill:#333;}.b{fill:#ED1C24;}</style><switch><foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" width="1" height="1"/><g><g><path d="M81.8 90.2c-3.6 0.9-7.5 1.3-11.7 1.3 -4.4 0-8.4-0.7-12.1-2.1 -3.7-1.4-6.9-3.4-9.5-5.9 -2.7-2.5-4.7-5.6-6.2-9.1 -1.5-3.5-2.2-7.5-2.2-11.8 0-4.4 0.8-8.4 2.3-11.9 1.5-3.6 3.6-6.6 6.3-9.1 2.7-2.5 5.8-4.4 9.4-5.8 3.6-1.3 7.5-2 11.7-2 4.3 0 8.4 0.7 12.1 2 3.7 1.3 6.7 3.1 9.1 5.3l-8.4 9.5c-1.3-1.5-3-2.7-5.1-3.7 -2.1-1-4.5-1.4-7.2-1.4 -2.3 0-4.5 0.4-6.4 1.3 -2 0.9-3.7 2-5.1 3.6 -1.4 1.5-2.6 3.3-3.4 5.4 -0.8 2.1-1.2 4.4-1.2 6.8 0 2.5 0.4 4.8 1.1 7 0.7 2.1 1.8 3.9 3.2 5.5 1.4 1.5 3.2 2.7 5.3 3.6 2.1 0.9 4.5 1.3 7.2 1.3 1.5 0 3-0.1 4.4-0.3s2.7-0.6 3.9-1.1v-10H68.7V57.8h22.6v29C88.6 88.2 85.4 89.3 81.8 90.2z" class="a"/><path d="M142.2 70.7c0 3.1-0.6 6-1.7 8.5 -1.1 2.6-2.7 4.7-4.6 6.5 -2 1.8-4.2 3.2-6.8 4.1 -2.6 1-5.3 1.5-8.3 1.5 -2.9 0-5.6-0.5-8.2-1.5 -2.6-1-4.9-2.4-6.8-4.1s-3.5-3.9-4.6-6.5c-1.1-2.6-1.7-5.4-1.7-8.5 0-3.1 0.6-6 1.7-8.5 1.1-2.5 2.7-4.7 4.6-6.4 1.9-1.8 4.2-3.1 6.8-4 2.6-0.9 5.4-1.4 8.2-1.4 2.9 0 5.7 0.5 8.3 1.4 2.6 0.9 4.8 2.3 6.8 4 2 1.8 3.5 3.9 4.6 6.4C141.7 64.7 142.2 67.6 142.2 70.7zM130 70.7c0-1.2-0.2-2.4-0.6-3.6 -0.4-1.2-1-2.2-1.8-3.1 -0.8-0.9-1.7-1.6-2.9-2.2 -1.1-0.6-2.4-0.9-3.9-0.9 -1.5 0-2.8 0.3-3.9 0.9 -1.1 0.6-2.1 1.3-2.8 2.2 -0.7 0.9-1.3 1.9-1.7 3.1 -0.4 1.2-0.6 2.4-0.6 3.6 0 1.2 0.2 2.5 0.6 3.6 0.4 1.2 1 2.3 1.7 3.2 0.8 1 1.7 1.7 2.9 2.3 1.1 0.6 2.4 0.9 3.9 0.9 1.5 0 2.8-0.3 3.9-0.9 1.1-0.6 2.1-1.3 2.9-2.3 0.8-1 1.4-2 1.7-3.2C129.8 73.2 130 71.9 130 70.7z" class="a"/><path d="M164 61v14.8c0 1.8 0.3 3.2 1 4.1s1.9 1.4 3.8 1.4c0.6 0 1.3-0.1 2-0.2 0.7-0.1 1.3-0.3 1.7-0.5l0.2 9.3c-0.9 0.3-2 0.6-3.3 0.8 -1.3 0.2-2.7 0.3-4 0.3 -2.6 0-4.7-0.3-6.5-1 -1.8-0.6-3.2-1.6-4.2-2.8 -1.1-1.2-1.8-2.7-2.3-4.3s-0.7-3.6-0.7-5.6V61h-6.2v-9.4h6.1V41.5h12.5v10.1h9.1v9.4H164z" class="a"/><path d="M71.1 183v-5h-0.2c-1.2 2-3 3.5-5.3 4.5 -2.3 1.1-4.7 1.6-7.3 1.6 -2.9 0-5.5-0.6-7.7-1.7 -2.3-1.1-4.2-2.6-5.8-4.5 -1.6-1.9-2.8-4.1-3.6-6.5 -0.8-2.5-1.2-5.1-1.2-7.7s0.4-5.2 1.3-7.7c0.9-2.4 2.1-4.6 3.6-6.5 1.6-1.9 3.5-3.3 5.7-4.4 2.2-1.1 4.8-1.6 7.5-1.6 2.8 0 5.2 0.5 7.2 1.6 2 1.1 3.5 2.3 4.6 3.6h0.2v-24.1h12.7v58.5H71.1zM70.6 163.6c0-1.2-0.2-2.4-0.7-3.6 -0.4-1.2-1.1-2.2-1.9-3.2 -0.8-0.9-1.8-1.7-2.9-2.2 -1.1-0.6-2.4-0.9-3.9-0.9 -1.5 0-2.8 0.3-3.9 0.9 -1.1 0.6-2.1 1.3-2.9 2.2 -0.8 0.9-1.4 1.9-1.7 3.1 -0.4 1.2-0.6 2.4-0.6 3.6 0 1.2 0.2 2.5 0.6 3.7s1 2.3 1.7 3.2c0.8 0.9 1.7 1.7 2.9 2.2 1.1 0.6 2.4 0.9 3.9 0.9 1.4 0 2.7-0.3 3.9-0.9 1.1-0.6 2.1-1.3 2.9-2.2 0.8-0.9 1.4-2 1.9-3.2C70.4 166.1 70.6 164.9 70.6 163.6z" class="b"/><path d="M131 164.2c0 0.5 0 1 0 1.5 0 0.5 0 1-0.1 1.5h-27.9c0.1 1.1 0.4 2.1 1 2.9 0.5 0.9 1.2 1.6 2.1 2.3 0.9 0.6 1.8 1.1 2.9 1.5 1.1 0.4 2.2 0.5 3.3 0.5 2 0 3.7-0.4 5.1-1.1 1.4-0.7 2.5-1.7 3.4-2.9l8.8 5.6c-1.8 2.6-4.2 4.7-7.2 6.1 -3 1.4-6.4 2.1-10.3 2.1 -2.9 0-5.6-0.5-8.2-1.4 -2.6-0.9-4.8-2.2-6.8-3.9 -1.9-1.7-3.5-3.9-4.6-6.4 -1.1-2.5-1.7-5.4-1.7-8.7 0-3.1 0.5-6 1.6-8.5 1.1-2.6 2.6-4.7 4.4-6.5 1.9-1.8 4-3.2 6.6-4.1 2.5-1 5.3-1.5 8.2-1.5 2.8 0 5.4 0.5 7.8 1.4 2.4 1 4.4 2.3 6.1 4.1 1.7 1.8 3 4 4 6.6C130.5 157.9 131 160.9 131 164.2zM119.3 159.3c0-2-0.6-3.7-1.9-5.2 -1.3-1.4-3.2-2.2-5.7-2.2 -1.2 0-2.4 0.2-3.4 0.6 -1 0.4-1.9 0.9-2.7 1.6 -0.8 0.7-1.4 1.5-1.9 2.4 -0.5 0.9-0.7 1.8-0.8 2.8H119.3z" class="b"/><path d="M161.6 155.8c-1-1-2.2-1.8-3.6-2.5 -1.4-0.7-2.9-1-4.4-1 -1.2 0-2.3 0.2-3.3 0.7 -1 0.5-1.5 1.3-1.5 2.4 0 1.1 0.6 1.9 1.7 2.3 1.1 0.5 2.9 1 5.4 1.5 1.4 0.3 2.9 0.7 4.4 1.3 1.5 0.6 2.8 1.3 4 2.2 1.2 0.9 2.1 2.1 2.9 3.4 0.7 1.3 1.1 2.9 1.1 4.8 0 2.4-0.5 4.5-1.5 6.2 -1 1.7-2.3 3-3.8 4.1 -1.6 1-3.3 1.8-5.3 2.2 -2 0.5-3.9 0.7-5.9 0.7 -3.1 0-6.2-0.5-9.2-1.5s-5.5-2.5-7.5-4.4l7.1-7.5c1.1 1.2 2.5 2.3 4.2 3.1 1.7 0.8 3.4 1.2 5.3 1.2 1 0 2.1-0.2 3.1-0.7 1-0.5 1.5-1.4 1.5-2.6 0-1.2-0.6-2.1-1.9-2.6s-3.2-1.2-5.8-1.8c-1.3-0.3-2.7-0.7-4-1.2 -1.3-0.5-2.5-1.2-3.6-2.1 -1.1-0.9-1.9-2-2.6-3.2 -0.7-1.3-1-2.8-1-4.6 0-2.3 0.5-4.3 1.5-5.9 1-1.6 2.2-3 3.8-4 1.5-1 3.3-1.8 5.1-2.3 1.9-0.5 3.8-0.7 5.6-0.7 2.9 0 5.7 0.5 8.5 1.4 2.8 0.9 5.1 2.3 7 4.1L161.6 155.8z" class="b"/><path d="M189.2 132.1c0 1-0.2 1.9-0.6 2.7 -0.4 0.9-0.9 1.6-1.5 2.2 -0.6 0.6-1.4 1.1-2.3 1.5 -0.9 0.4-1.8 0.5-2.8 0.5 -2.1 0-3.8-0.7-5.2-2 -1.4-1.4-2.1-3-2.1-4.9 0-0.9 0.2-1.8 0.5-2.7 0.4-0.9 0.9-1.6 1.5-2.2 0.7-0.6 1.4-1.1 2.3-1.5 0.9-0.4 1.8-0.6 2.9-0.6 1 0 1.9 0.2 2.8 0.5 0.9 0.4 1.7 0.9 2.3 1.5 0.6 0.6 1.2 1.4 1.5 2.2S189.2 131.2 189.2 132.1zM175.6 183v-38.5h12.7v38.5H175.6z" class="b"/><path d="M239.2 179.3c0 3.8-0.5 7-1.6 9.8s-2.6 5.1-4.6 6.9c-2 1.8-4.3 3.2-7.2 4.1 -2.8 0.9-5.9 1.4-9.3 1.4 -3.4 0-6.9-0.5-10.5-1.5 -3.6-1-6.7-2.5-9.3-4.5l6.3-9.1c1.9 1.7 3.9 2.9 6.2 3.7 2.2 0.8 4.4 1.2 6.6 1.2 3.7 0 6.5-1 8.2-2.9s2.7-4.6 2.7-7.8v-2.3h-0.2c-1.2 1.5-2.8 2.8-4.8 3.7 -2 0.9-4.3 1.4-6.9 1.4 -2.9 0-5.5-0.5-7.8-1.6 -2.3-1.1-4.2-2.5-5.8-4.3 -1.6-1.8-2.8-3.9-3.6-6.3 -0.8-2.4-1.2-4.9-1.2-7.6s0.4-5.2 1.2-7.7c0.8-2.4 2-4.6 3.6-6.4 1.6-1.9 3.5-3.3 5.8-4.4 2.3-1.1 4.8-1.7 7.7-1.7 2.4 0 4.7 0.5 7 1.5 2.2 1 4 2.5 5.3 4.6h0.2v-5h12V179.3zM227.1 163.5c0-1.3-0.2-2.5-0.7-3.7 -0.4-1.2-1.1-2.2-1.9-3.1 -0.8-0.9-1.8-1.6-2.9-2.1 -1.1-0.5-2.4-0.8-3.9-0.8 -1.4 0-2.7 0.3-3.8 0.8 -1.1 0.5-2 1.2-2.8 2.1 -0.8 0.9-1.4 1.9-1.8 3.1 -0.4 1.2-0.6 2.5-0.6 3.8 0 1.3 0.2 2.5 0.6 3.7 0.4 1.2 1 2.2 1.8 3.1 0.8 0.9 1.7 1.6 2.8 2.2 1.1 0.5 2.4 0.8 3.8 0.8 1.4 0 2.7-0.3 3.9-0.8 1.2-0.5 2.1-1.2 2.9-2.1 0.8-0.9 1.4-1.9 1.9-3.1C226.9 166.1 227.1 164.8 227.1 163.5z" class="b"/><path d="M274.5 183v-21c0-1.1-0.1-2.1-0.3-3.1 -0.2-1-0.5-1.8-0.9-2.6 -0.4-0.7-1-1.3-1.7-1.8 -0.7-0.4-1.7-0.7-2.8-0.7s-2.1 0.2-3 0.7c-0.9 0.4-1.6 1-2.1 1.8 -0.6 0.8-1 1.7-1.3 2.7s-0.4 2.1-0.4 3.1v20.9H249.2v-38.5h12.3v5.3h0.2c0.5-0.8 1.1-1.6 1.8-2.4 0.7-0.8 1.6-1.5 2.6-2 1-0.6 2.1-1 3.3-1.4 1.2-0.4 2.4-0.5 3.8-0.5 2.6 0 4.8 0.5 6.6 1.4 1.8 0.9 3.3 2.1 4.4 3.6 1.1 1.5 1.9 3.2 2.4 5.1 0.5 1.9 0.7 3.8 0.7 5.7v23.8H274.5z" class="b"/><path d="M335.1 164.2c0 0.5 0 1 0 1.5 0 0.5 0 1-0.1 1.5h-27.9c0.1 1.1 0.4 2.1 1 2.9 0.5 0.9 1.2 1.6 2.1 2.3 0.9 0.6 1.8 1.1 2.9 1.5 1.1 0.4 2.2 0.5 3.3 0.5 2 0 3.7-0.4 5.1-1.1 1.4-0.7 2.5-1.7 3.4-2.9l8.8 5.6c-1.8 2.6-4.2 4.7-7.2 6.1 -3 1.4-6.4 2.1-10.3 2.1 -2.9 0-5.6-0.5-8.2-1.4 -2.6-0.9-4.8-2.2-6.8-3.9 -1.9-1.7-3.5-3.9-4.6-6.4 -1.1-2.5-1.7-5.4-1.7-8.7 0-3.1 0.5-6 1.6-8.5 1.1-2.6 2.6-4.7 4.4-6.5 1.9-1.8 4-3.2 6.6-4.1 2.5-1 5.3-1.5 8.2-1.5 2.8 0 5.4 0.5 7.8 1.4 2.4 1 4.4 2.3 6.1 4.1 1.7 1.8 3 4 4 6.6C334.6 157.9 335.1 160.9 335.1 164.2zM323.4 159.3c0-2-0.6-3.7-1.9-5.2 -1.3-1.4-3.2-2.2-5.7-2.2 -1.2 0-2.4 0.2-3.4 0.6 -1 0.4-1.9 0.9-2.7 1.6 -0.8 0.7-1.4 1.5-1.9 2.4 -0.5 0.9-0.7 1.8-0.8 2.8H323.4z" class="b"/><path d="M368 154.9c-0.6-0.2-1.1-0.3-1.7-0.3 -0.5-0.1-1.1-0.1-1.6-0.1 -1.7 0-3.1 0.3-4.3 0.9 -1.2 0.6-2.1 1.4-2.8 2.2 -0.7 0.9-1.2 1.8-1.5 2.9 -0.3 1-0.5 1.9-0.5 2.7v19.8h-12.7v-38.5h12.2v5.6h0.2c1-2 2.4-3.6 4.2-4.8s3.9-1.9 6.3-1.9c0.5 0 1 0 1.5 0.1 0.5 0.1 0.9 0.1 1.2 0.2L368 154.9z" class="b"/><path d="M82.7 256.4c0 3.1-0.6 6-1.7 8.5 -1.1 2.6-2.7 4.7-4.6 6.5 -2 1.8-4.2 3.2-6.8 4.1 -2.6 1-5.3 1.5-8.3 1.5 -2.9 0-5.6-0.5-8.2-1.5 -2.6-1-4.9-2.4-6.8-4.1s-3.5-3.9-4.6-6.5c-1.1-2.6-1.7-5.4-1.7-8.5s0.6-6 1.7-8.5c1.1-2.5 2.7-4.7 4.6-6.4 1.9-1.8 4.2-3.1 6.8-4 2.6-0.9 5.4-1.4 8.2-1.4 2.9 0 5.7 0.5 8.3 1.4 2.6 0.9 4.8 2.3 6.8 4 2 1.8 3.5 3.9 4.6 6.4C82.2 250.4 82.7 253.2 82.7 256.4zM70.5 256.4c0-1.2-0.2-2.4-0.6-3.6 -0.4-1.2-1-2.2-1.8-3.1 -0.8-0.9-1.7-1.6-2.9-2.2 -1.1-0.6-2.4-0.9-3.9-0.9 -1.5 0-2.8 0.3-3.9 0.9 -1.1 0.6-2.1 1.3-2.8 2.2 -0.7 0.9-1.3 1.9-1.7 3.1 -0.4 1.2-0.6 2.4-0.6 3.6 0 1.2 0.2 2.4 0.6 3.6 0.4 1.2 1 2.3 1.7 3.2 0.8 1 1.7 1.7 2.9 2.3 1.1 0.6 2.4 0.9 3.9 0.9 1.5 0 2.8-0.3 3.9-0.8 1.1-0.6 2.1-1.3 2.9-2.3 0.8-1 1.4-2 1.7-3.2C70.3 258.8 70.5 257.6 70.5 256.4z" class="b"/><path d="M114.7 226.7c-0.5-0.2-1-0.3-1.6-0.4 -0.6-0.1-1.2-0.2-1.9-0.2 -1.2 0-2.1 0.2-2.9 0.6 -0.7 0.4-1.3 1-1.7 1.7 -0.4 0.7-0.7 1.5-0.9 2.4 -0.2 0.9-0.2 1.8-0.2 2.6v3.9h8.6v9.4h-8.6v29.1H92.9v-29.1h-7v-9.4h7v-3.7c0-2.4 0.3-4.6 0.8-6.8 0.5-2.1 1.4-4 2.7-5.6 1.3-1.6 3-2.9 5.1-3.9 2.1-1 4.8-1.4 8-1.4 1.1 0 2.2 0.1 3.2 0.2 1.1 0.1 2 0.3 2.9 0.6L114.7 226.7z" class="b"/><path d="M153.9 246.7v14.8c0 1.8 0.3 3.2 1 4.1s1.9 1.4 3.8 1.4c0.6 0 1.3-0.1 2-0.2 0.7-0.1 1.3-0.3 1.7-0.5l0.2 9.3c-0.9 0.3-2 0.6-3.3 0.8 -1.3 0.2-2.7 0.3-4 0.3 -2.6 0-4.7-0.3-6.5-1 -1.8-0.6-3.2-1.6-4.2-2.8 -1.1-1.2-1.8-2.7-2.3-4.3 -0.5-1.7-0.7-3.6-0.7-5.6v-16.3h-6.2v-9.4h6.1v-10.1h12.5v10.1h9.1v9.4H153.9z" class="b"/><path d="M194.3 275.8v-20.9c0-1.1-0.1-2.1-0.2-3.1 -0.2-1-0.5-1.8-0.9-2.6 -0.4-0.7-1-1.3-1.7-1.8 -0.7-0.4-1.7-0.7-2.8-0.7 -2.2 0-3.9 0.8-5.1 2.4 -1.2 1.6-1.8 3.5-1.8 5.8v20.8h-12.7v-58.5h12.7v24.8h0.2c0.9-1.5 2.3-2.9 4.2-4.1 1.9-1.2 4.2-1.8 6.9-1.8 2.6 0 4.8 0.5 6.6 1.4 1.8 0.9 3.2 2.1 4.3 3.6 1.1 1.5 1.9 3.2 2.4 5.1 0.5 1.9 0.7 3.8 0.7 5.7v23.8H194.3z" class="b"/><path d="M254.9 257c0 0.5 0 1 0 1.5s0 1-0.1 1.5h-27.9c0.1 1.1 0.4 2.1 1 2.9 0.5 0.9 1.2 1.6 2.1 2.3 0.9 0.6 1.8 1.1 2.9 1.5 1.1 0.4 2.2 0.5 3.3 0.5 2 0 3.7-0.4 5.1-1.1 1.4-0.7 2.5-1.7 3.4-2.9l8.8 5.6c-1.8 2.6-4.2 4.7-7.2 6.1 -3 1.4-6.4 2.1-10.3 2.1 -2.9 0-5.6-0.5-8.2-1.4 -2.6-0.9-4.8-2.2-6.8-3.9 -1.9-1.7-3.5-3.9-4.6-6.4 -1.1-2.5-1.7-5.4-1.7-8.7 0-3.1 0.5-6 1.6-8.5s2.6-4.7 4.4-6.5c1.9-1.8 4-3.2 6.6-4.1 2.5-1 5.3-1.5 8.2-1.5 2.8 0 5.4 0.5 7.8 1.4 2.4 1 4.4 2.3 6.1 4.1 1.7 1.8 3 4 4 6.6C254.4 250.8 254.9 253.7 254.9 257zM243.2 252.1c0-2-0.6-3.7-1.9-5.2 -1.3-1.4-3.2-2.2-5.7-2.2 -1.2 0-2.4 0.2-3.4 0.6 -1 0.4-1.9 0.9-2.7 1.6 -0.8 0.7-1.4 1.5-1.9 2.4 -0.5 0.9-0.7 1.8-0.8 2.8H243.2z" class="b"/><path d="M303.8 281.6c-0.8 2-1.6 3.8-2.6 5.4 -1 1.6-2.1 2.9-3.4 4s-2.9 1.9-4.6 2.5c-1.8 0.6-3.9 0.9-6.3 0.9 -1.2 0-2.4-0.1-3.7-0.2 -1.3-0.2-2.4-0.4-3.3-0.6l1.4-10.7c0.6 0.2 1.3 0.4 2.1 0.5 0.7 0.1 1.4 0.2 2.1 0.2 2 0 3.4-0.5 4.3-1.4 0.9-0.9 1.6-2.2 2.2-3.8l1.2-3.2 -16.1-37.9h14.1l8.6 24.8h0.2l7.7-24.8h13.5L303.8 281.6z" class="b"/><path d="M364.2 257c0 0.5 0 1 0 1.5s0 1-0.1 1.5h-27.9c0.1 1.1 0.4 2.1 1 2.9 0.5 0.9 1.2 1.6 2.1 2.3s1.8 1.1 2.9 1.5c1.1 0.4 2.2 0.5 3.3 0.5 2 0 3.7-0.4 5.1-1.1 1.4-0.7 2.5-1.7 3.4-2.9l8.8 5.6c-1.8 2.6-4.2 4.7-7.2 6.1 -3 1.4-6.4 2.1-10.3 2.1 -2.9 0-5.6-0.5-8.2-1.4 -2.6-0.9-4.8-2.2-6.8-3.9 -1.9-1.7-3.5-3.9-4.6-6.4 -1.1-2.5-1.7-5.4-1.7-8.7 0-3.1 0.5-6 1.6-8.5 1.1-2.6 2.6-4.7 4.4-6.5s4-3.2 6.6-4.1c2.5-1 5.3-1.5 8.2-1.5 2.8 0 5.4 0.5 7.8 1.4 2.4 1 4.4 2.3 6.1 4.1 1.7 1.8 3 4 4 6.6C363.7 250.8 364.2 253.7 364.2 257zM352.5 252.1c0-2-0.6-3.7-1.9-5.2 -1.3-1.4-3.2-2.2-5.7-2.2 -1.2 0-2.4 0.2-3.4 0.6s-1.9 0.9-2.7 1.6c-0.8 0.7-1.4 1.5-1.9 2.4 -0.5 0.9-0.7 1.8-0.8 2.8H352.5z" class="b"/><path d="M371.1 242.5c2.3-2.2 4.9-3.8 7.9-4.9 3-1.1 6.1-1.6 9.2-1.6 3.3 0 6 0.4 8.2 1.2 2.2 0.8 4.1 2 5.5 3.7 1.4 1.7 2.4 3.8 3.1 6.3 0.6 2.6 1 5.6 1 9.1v19.4h-11.6v-4.1h-0.2c-1 1.6-2.5 2.8-4.4 3.7 -2 0.9-4.1 1.3-6.5 1.3 -1.5 0-3.1-0.2-4.8-0.6s-3.2-1.1-4.5-2c-1.4-0.9-2.5-2.2-3.4-3.7s-1.3-3.5-1.3-5.7c0-2.8 0.8-5 2.3-6.7 1.5-1.7 3.5-3 5.9-3.9 2.4-0.9 5.1-1.5 8-1.9 2.9-0.3 5.8-0.5 8.6-0.5v-0.6c0-1.9-0.7-3.3-2-4.2 -1.3-0.9-3-1.4-5-1.4 -1.8 0-3.5 0.4-5.2 1.2 -1.7 0.8-3.1 1.7-4.3 2.8L371.1 242.5zM394.4 259h-1.6c-1.4 0-2.8 0.1-4.2 0.2 -1.4 0.1-2.7 0.4-3.8 0.7 -1.1 0.4-2 0.9-2.7 1.6 -0.7 0.7-1.1 1.6-1.1 2.7 0 0.7 0.2 1.3 0.5 1.9 0.3 0.5 0.8 0.9 1.3 1.2 0.5 0.3 1.1 0.5 1.8 0.7s1.3 0.2 1.9 0.2c2.6 0 4.6-0.7 5.9-2.1s2.1-3.3 2.1-5.8V259z" class="b"/><path d="M440.4 247.7c-0.6-0.2-1.1-0.3-1.7-0.3 -0.5-0.1-1.1-0.1-1.6-0.1 -1.7 0-3.1 0.3-4.3 0.9 -1.2 0.6-2.1 1.4-2.8 2.2 -0.7 0.9-1.2 1.8-1.5 2.9 -0.3 1-0.5 1.9-0.5 2.7v19.8h-12.7v-38.5h12.2v5.6h0.2c1-2 2.4-3.6 4.2-4.8s3.9-1.9 6.3-1.9c0.5 0 1 0 1.5 0.1 0.5 0.1 0.9 0.1 1.2 0.2L440.4 247.7z" class="b"/><path d="M55.7 339.5v14.8c0 1.8 0.3 3.2 1 4.1s1.9 1.4 3.8 1.4c0.6 0 1.3-0.1 2-0.2 0.7-0.1 1.3-0.3 1.7-0.5l0.2 9.3c-0.9 0.3-2 0.6-3.3 0.8 -1.3 0.2-2.7 0.3-4 0.3 -2.6 0-4.7-0.3-6.5-1 -1.8-0.6-3.2-1.6-4.2-2.8 -1.1-1.2-1.8-2.7-2.3-4.3 -0.5-1.7-0.7-3.6-0.7-5.6v-16.3h-6.2v-9.4h6.1v-10.1h12.5v10.1h9.1v9.4H55.7z" class="a"/><path d="M96 368.6v-20.9c0-1.1-0.1-2.1-0.2-3.1s-0.5-1.8-0.9-2.6c-0.4-0.7-1-1.3-1.7-1.8 -0.7-0.4-1.7-0.7-2.8-0.7 -2.2 0-3.9 0.8-5.1 2.4 -1.2 1.6-1.8 3.5-1.8 5.8v20.8H70.8V310.2h12.7v24.8h0.2c0.9-1.5 2.3-2.9 4.2-4.1 1.9-1.2 4.2-1.8 6.9-1.8 2.6 0 4.8 0.5 6.6 1.4 1.8 0.9 3.2 2.1 4.3 3.6 1.1 1.5 1.9 3.2 2.4 5.1 0.5 1.9 0.7 3.8 0.7 5.7v23.8H96z" class="a"/><path d="M143.4 340.6c-0.6-0.2-1.1-0.3-1.7-0.3s-1.1-0.1-1.6-0.1c-1.7 0-3.1 0.3-4.3 0.9 -1.2 0.6-2.1 1.4-2.8 2.2s-1.2 1.8-1.5 2.9c-0.3 1-0.5 1.9-0.5 2.7v19.8h-12.7v-38.5h12.2v5.6h0.2c1-2 2.4-3.6 4.2-4.8 1.8-1.2 3.9-1.9 6.3-1.9 0.5 0 1 0 1.5 0.1 0.5 0.1 0.9 0.1 1.2 0.2L143.4 340.6z" class="a"/><path d="M185.9 349.8c0 0.5 0 1 0 1.5s0 1-0.1 1.5h-27.9c0.1 1.1 0.4 2.1 1 2.9 0.5 0.9 1.2 1.6 2.1 2.3 0.9 0.6 1.8 1.1 2.9 1.5 1.1 0.4 2.2 0.5 3.3 0.5 2 0 3.7-0.4 5.1-1.1 1.4-0.7 2.5-1.7 3.4-2.9l8.8 5.6c-1.8 2.6-4.2 4.7-7.2 6.1 -3 1.4-6.4 2.1-10.3 2.1 -2.9 0-5.6-0.5-8.2-1.4 -2.6-0.9-4.8-2.2-6.8-3.9 -1.9-1.7-3.5-3.9-4.6-6.4 -1.1-2.5-1.7-5.4-1.7-8.7 0-3.1 0.5-6 1.6-8.5 1.1-2.6 2.6-4.7 4.4-6.5 1.9-1.8 4-3.2 6.6-4.1 2.5-1 5.3-1.5 8.2-1.5 2.8 0 5.4 0.5 7.8 1.4 2.4 1 4.4 2.3 6.1 4.1 1.7 1.8 3 4 4 6.6C185.4 343.6 185.9 346.5 185.9 349.8zM174.2 345c0-2-0.6-3.7-1.9-5.2 -1.3-1.4-3.2-2.2-5.7-2.2 -1.2 0-2.4 0.2-3.4 0.6s-1.9 0.9-2.7 1.6c-0.8 0.7-1.4 1.5-1.9 2.4 -0.5 0.9-0.7 1.8-0.8 2.8H174.2z" class="a"/><path d="M232 349.8c0 0.5 0 1 0 1.5s0 1-0.1 1.5h-27.9c0.1 1.1 0.4 2.1 1 2.9 0.5 0.9 1.2 1.6 2.1 2.3 0.9 0.6 1.8 1.1 2.9 1.5 1.1 0.4 2.2 0.5 3.3 0.5 2 0 3.7-0.4 5.1-1.1 1.4-0.7 2.5-1.7 3.4-2.9l8.8 5.6c-1.8 2.6-4.2 4.7-7.2 6.1 -3 1.4-6.4 2.1-10.3 2.1 -2.9 0-5.6-0.5-8.2-1.4 -2.6-0.9-4.8-2.2-6.8-3.9 -1.9-1.7-3.5-3.9-4.6-6.4 -1.1-2.5-1.7-5.4-1.7-8.7 0-3.1 0.5-6 1.6-8.5s2.6-4.7 4.4-6.5c1.9-1.8 4-3.2 6.6-4.1 2.5-1 5.3-1.5 8.2-1.5 2.8 0 5.4 0.5 7.8 1.4 2.4 1 4.4 2.3 6.1 4.1 1.7 1.8 3 4 4 6.6C231.5 343.6 232 346.5 232 349.8zM220.3 345c0-2-0.6-3.7-1.9-5.2 -1.3-1.4-3.2-2.2-5.7-2.2 -1.2 0-2.4 0.2-3.4 0.6 -1 0.4-1.9 0.9-2.7 1.6 -0.8 0.7-1.4 1.5-1.9 2.4 -0.5 0.9-0.7 1.8-0.8 2.8H220.3z" class="a"/><path d="M273 339.5v14.8c0 1.8 0.3 3.2 1 4.1 0.7 0.9 1.9 1.4 3.8 1.4 0.6 0 1.3-0.1 2-0.2 0.7-0.1 1.3-0.3 1.7-0.5l0.2 9.3c-0.9 0.3-2 0.6-3.3 0.8 -1.3 0.2-2.7 0.3-4 0.3 -2.6 0-4.7-0.3-6.5-1 -1.8-0.6-3.2-1.6-4.2-2.8 -1.1-1.2-1.8-2.7-2.3-4.3 -0.5-1.7-0.7-3.6-0.7-5.6v-16.3h-6.2v-9.4h6.1v-10.1h12.5v10.1h9.1v9.4H273z" class="a"/><path d="M301.8 317.8c0 1-0.2 1.9-0.6 2.7s-0.9 1.6-1.5 2.2 -1.4 1.1-2.3 1.5c-0.9 0.4-1.8 0.5-2.8 0.5 -2.1 0-3.8-0.7-5.2-2.1 -1.4-1.4-2.1-3-2.1-4.9 0-0.9 0.2-1.8 0.5-2.7 0.4-0.8 0.9-1.6 1.5-2.2 0.7-0.6 1.4-1.1 2.3-1.5s1.8-0.6 2.9-0.6c1 0 1.9 0.2 2.8 0.5 0.9 0.4 1.7 0.9 2.3 1.5s1.2 1.4 1.5 2.2S301.8 316.8 301.8 317.8zM288.1 368.6v-38.5h12.7v38.5H288.1z" class="a"/><path d="M360.1 368.6v-21c0-1.1-0.1-2.1-0.2-3.1s-0.4-1.9-0.9-2.6 -1-1.3-1.7-1.7c-0.7-0.4-1.6-0.7-2.7-0.7 -1.1 0-2 0.2-2.8 0.7 -0.8 0.5-1.5 1.1-2 1.9s-0.9 1.7-1.2 2.7c-0.3 1-0.4 2.1-0.4 3.1v20.8h-12.7v-22c0-2.2-0.4-4-1.3-5.3s-2.3-1.9-4.2-1.9c-2 0-3.6 0.8-4.7 2.4 -1.1 1.6-1.7 3.6-1.7 5.9v20.9h-12.8v-38.5h12.3v5.3h0.2c0.5-0.8 1-1.6 1.7-2.4 0.7-0.8 1.5-1.5 2.5-2.1 1-0.6 2.1-1.1 3.3-1.4 1.2-0.4 2.5-0.5 4-0.5 2.8 0 5.1 0.6 7.1 1.7s3.4 2.8 4.5 4.9c1.3-2 2.9-3.6 5-4.8 2-1.2 4.5-1.8 7.4-1.8 2.6 0 4.8 0.5 6.6 1.4 1.8 1 3.2 2.2 4.3 3.7 1.1 1.5 1.9 3.2 2.4 5.1 0.5 1.9 0.7 3.7 0.7 5.5v23.8H360.1z" class="a"/><path d="M420.6 349.8c0 0.5 0 1 0 1.5s0 1-0.1 1.5h-27.9c0.1 1.1 0.4 2.1 1 2.9 0.5 0.9 1.2 1.6 2.1 2.3 0.9 0.6 1.8 1.1 2.9 1.5 1.1 0.4 2.2 0.5 3.3 0.5 2 0 3.7-0.4 5.1-1.1 1.4-0.7 2.5-1.7 3.4-2.9l8.8 5.6c-1.8 2.6-4.2 4.7-7.2 6.1 -3 1.4-6.4 2.1-10.3 2.1 -2.9 0-5.6-0.5-8.2-1.4 -2.6-0.9-4.8-2.2-6.8-3.9 -1.9-1.7-3.5-3.9-4.6-6.4 -1.1-2.5-1.7-5.4-1.7-8.7 0-3.1 0.5-6 1.6-8.5 1.1-2.6 2.6-4.7 4.4-6.5 1.9-1.8 4-3.2 6.6-4.1s5.3-1.5 8.2-1.5c2.8 0 5.4 0.5 7.8 1.4 2.4 1 4.4 2.3 6.1 4.1 1.7 1.8 3 4 4 6.6C420.1 343.6 420.6 346.5 420.6 349.8zM408.9 345c0-2-0.6-3.7-1.9-5.2 -1.3-1.4-3.2-2.2-5.7-2.2 -1.2 0-2.4 0.2-3.4 0.6 -1 0.4-1.9 0.9-2.7 1.6 -0.8 0.7-1.4 1.5-1.9 2.4 -0.5 0.9-0.7 1.8-0.8 2.8H408.9z" class="a"/><path d="M451.1 341.5c-1-1-2.2-1.8-3.6-2.5 -1.4-0.7-2.9-1-4.4-1 -1.2 0-2.3 0.2-3.3 0.7 -1 0.5-1.5 1.3-1.5 2.4 0 1.1 0.6 1.9 1.7 2.3 1.1 0.5 2.9 1 5.4 1.5 1.4 0.3 2.9 0.7 4.4 1.3 1.5 0.6 2.8 1.3 4 2.2 1.2 0.9 2.1 2.1 2.9 3.4 0.7 1.3 1.1 2.9 1.1 4.8 0 2.4-0.5 4.5-1.5 6.2 -1 1.7-2.3 3-3.8 4.1 -1.6 1-3.3 1.8-5.3 2.2 -2 0.5-3.9 0.7-5.9 0.7 -3.1 0-6.2-0.5-9.2-1.5 -3-1-5.5-2.5-7.5-4.4l7.1-7.5c1.1 1.2 2.5 2.3 4.2 3.1 1.6 0.8 3.4 1.2 5.3 1.2 1 0 2.1-0.2 3.1-0.7 1-0.5 1.5-1.4 1.5-2.6 0-1.2-0.6-2.1-1.9-2.6 -1.2-0.6-3.2-1.2-5.8-1.8 -1.3-0.3-2.7-0.7-4-1.2 -1.3-0.5-2.5-1.2-3.6-2.1 -1.1-0.9-1.9-2-2.6-3.2s-1-2.8-1-4.6c0-2.3 0.5-4.3 1.5-5.9 1-1.6 2.2-3 3.8-4 1.5-1 3.3-1.8 5.1-2.3 1.9-0.5 3.8-0.7 5.6-0.7 2.9 0 5.7 0.5 8.5 1.4 2.8 0.9 5.1 2.3 7 4.1L451.1 341.5z" class="a"/><path d="M55.7 410.6c0 1-0.2 1.9-0.6 2.7s-0.9 1.6-1.5 2.2c-0.6 0.6-1.4 1.1-2.3 1.5 -0.9 0.4-1.8 0.5-2.8 0.5 -2.1 0-3.8-0.7-5.2-2.1 -1.4-1.4-2.1-3-2.1-4.9 0-0.9 0.2-1.8 0.5-2.7 0.4-0.8 0.9-1.6 1.5-2.2 0.7-0.6 1.4-1.1 2.3-1.5 0.9-0.4 1.8-0.6 2.9-0.6 1 0 1.9 0.2 2.8 0.5 0.9 0.4 1.7 0.9 2.3 1.5 0.6 0.6 1.2 1.4 1.5 2.2S55.7 409.7 55.7 410.6zM42 461.5v-38.5h12.7v38.5H42z" class="a"/><path d="M90.1 461.5V440.4c0-1.1-0.1-2.1-0.3-3.1 -0.2-1-0.5-1.8-0.9-2.6 -0.4-0.7-1-1.3-1.7-1.8 -0.7-0.4-1.7-0.7-2.8-0.7 -1.1 0-2.1 0.2-3 0.7 -0.9 0.4-1.6 1-2.1 1.8 -0.6 0.8-1 1.7-1.3 2.7 -0.3 1-0.4 2.1-0.4 3.1v20.9H64.8v-38.5h12.3v5.3h0.2c0.5-0.8 1.1-1.6 1.8-2.4 0.7-0.8 1.6-1.5 2.6-2 1-0.6 2.1-1 3.3-1.4 1.2-0.4 2.4-0.5 3.8-0.5 2.6 0 4.8 0.5 6.6 1.4 1.8 0.9 3.3 2.1 4.4 3.6 1.1 1.5 1.9 3.2 2.4 5.1 0.5 1.9 0.7 3.8 0.7 5.7v23.8H90.1z" class="a"/><path d="M131.2 428.2c2.3-2.2 4.9-3.8 7.9-4.9s6.1-1.6 9.2-1.6c3.2 0 6 0.4 8.2 1.2 2.2 0.8 4.1 2 5.5 3.7 1.4 1.7 2.4 3.8 3.1 6.3 0.6 2.6 1 5.6 1 9.1v19.4h-11.6v-4.1h-0.2c-1 1.6-2.5 2.8-4.4 3.7 -2 0.9-4.1 1.3-6.5 1.3 -1.5 0-3.1-0.2-4.8-0.6 -1.7-0.4-3.2-1.1-4.5-2 -1.4-0.9-2.5-2.2-3.4-3.7 -0.9-1.5-1.3-3.5-1.3-5.7 0-2.8 0.8-5 2.3-6.7 1.5-1.7 3.5-3 5.9-3.9 2.4-0.9 5.1-1.5 8-1.9 2.9-0.3 5.8-0.5 8.6-0.5v-0.6c0-1.9-0.7-3.3-2-4.2 -1.3-0.9-3-1.4-5-1.4 -1.8 0-3.5 0.4-5.2 1.2 -1.7 0.8-3.1 1.7-4.3 2.8L131.2 428.2zM154.5 444.7h-1.6c-1.4 0-2.8 0.1-4.2 0.2 -1.4 0.1-2.7 0.4-3.8 0.7 -1.1 0.4-2 0.9-2.7 1.6 -0.7 0.7-1.1 1.6-1.1 2.7 0 0.7 0.2 1.3 0.5 1.9 0.3 0.5 0.8 0.9 1.3 1.2 0.5 0.3 1.1 0.5 1.8 0.7 0.7 0.1 1.3 0.2 1.9 0.2 2.6 0 4.6-0.7 5.9-2.1 1.4-1.4 2.1-3.3 2.1-5.8V444.7z" class="a"/><path d="M219.9 433.4c-0.6-0.2-1.1-0.3-1.7-0.3 -0.5-0.1-1.1-0.1-1.6-0.1 -1.7 0-3.1 0.3-4.3 0.9 -1.2 0.6-2.1 1.4-2.8 2.2s-1.2 1.8-1.5 2.9c-0.3 1-0.5 1.9-0.5 2.7v19.8h-12.7V423h12.2v5.6h0.2c1-2 2.4-3.6 4.2-4.8 1.8-1.2 3.9-1.9 6.3-1.9 0.5 0 1 0 1.5 0.1 0.5 0.1 0.9 0.1 1.2 0.2L219.9 433.4z" class="a"/><path d="M265 442.1c0 3.1-0.6 6-1.7 8.5 -1.1 2.6-2.7 4.7-4.6 6.5s-4.2 3.2-6.8 4.1c-2.6 1-5.3 1.5-8.3 1.5 -2.9 0-5.6-0.5-8.2-1.5s-4.9-2.4-6.8-4.1c-1.9-1.8-3.5-3.9-4.6-6.5 -1.1-2.6-1.7-5.4-1.7-8.5s0.6-6 1.7-8.5c1.1-2.5 2.7-4.7 4.6-6.4 1.9-1.8 4.2-3.1 6.8-4s5.4-1.4 8.2-1.4c2.9 0 5.7 0.5 8.3 1.4 2.6 0.9 4.8 2.3 6.8 4s3.5 3.9 4.6 6.4S265 438.9 265 442.1zM252.8 442.1c0-1.2-0.2-2.4-0.6-3.6 -0.4-1.2-1-2.2-1.8-3.1 -0.8-0.9-1.7-1.6-2.9-2.2 -1.1-0.6-2.5-0.9-3.9-0.9 -1.5 0-2.8 0.3-3.9 0.9 -1.1 0.6-2.1 1.3-2.8 2.2 -0.7 0.9-1.3 1.9-1.7 3.1 -0.4 1.2-0.6 2.4-0.6 3.6 0 1.2 0.2 2.4 0.6 3.6 0.4 1.2 1 2.3 1.7 3.2 0.8 1 1.7 1.7 2.9 2.3 1.1 0.6 2.4 0.9 3.9 0.9 1.5 0 2.8-0.3 3.9-0.8 1.1-0.6 2.1-1.3 2.9-2.3 0.8-1 1.4-2 1.7-3.2C252.6 444.5 252.8 443.3 252.8 442.1z" class="a"/><path d="M322.1 461.5h-12.8l-7.6-24h-0.2l-7.4 24h-12.8L268.1 422.9h13.7l6.7 24.4h0.2l6.9-24.4h12.8l7.1 24.4h0.2l6.7-24.4h13.2L322.1 461.5z" class="a"/><path d="M352.1 454.7c0 2.2-0.8 4-2.3 5.4 -1.5 1.4-3.3 2.2-5.5 2.2 -1.1 0-2.1-0.2-3.1-0.6 -1-0.4-1.8-0.9-2.5-1.6s-1.3-1.5-1.7-2.4c-0.4-0.9-0.6-1.9-0.6-3 0-1 0.2-2 0.6-2.9 0.4-0.9 1-1.7 1.7-2.4 0.7-0.7 1.6-1.2 2.5-1.7 1-0.4 2-0.6 3.1-0.6 2.1 0 3.9 0.7 5.5 2.2C351.4 450.7 352.1 452.5 352.1 454.7z" class="a"/></g></g></switch></svg>
 
-
+    <header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <p class="intro">This is James Washington's <a href="index.html">personal website</a>.</p>
+        <p class="intro">He is currently studying at the<a href="http://www.uark.edu/"> University of Arkansas</a>.</p>
+        <p class="intro">Follow him on <a href="https://www.instagram.com/j1zz4m35/">Instagram</a> or <a href="https://www.twitter.com/jbw014/">Twitter</a>, check out his <a href="work.html">personal projects</a>, read his <a href="blog.html">blog</a>, or send him an <a href="mailto:jbwashington@gmail.com">email</a>.</p>
+      </div>
     </div>
   </div>
 </header>
 
 
-<!-- <section id="one"> -->
-<!--   <div class="container wow fadeInUp"> -->
-<!--     <h2>Cards</h2> -->
-<!--     <p class="lead"> -->
-<!--       What you notice first in <a href="http://v4-alpha.getbootstrap.com/">Bootstrap 4</a> is that <code>.panel</code> and <code>.well</code> have been replaced by the <code>.card</code>. This makes a lot of sense as "cards" are one of the more well known trends in responsive design. -->
-<!--       The <a href="">Bootstrap 4 Cards</a> can be singular, grouped together (as shown) or <a href="">equal height</a>. There are many different layout and content options. -->
-<!--     </p> -->
 
-<!--     <div class="card-group"> -->
-      <!-- card -->
-<!--       <div class="card"> -->
-<!--         <img class="card-img-top img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample13.jpg" alt="Card image cap"> -->
-<!--         <div class="card-block"> -->
-<!--           <h4 class="card-title">Consise</h4> -->
-<!--           <p class="card-text">Cards are a good way to display content composed of different types of objects. They’re well-suited for presenting similar objects whose size or supported actions vary, like headings and photos with captions.</p> -->
-<!--         </div> -->
-<!--       </div> -->
-      <!-- card -->
-<!--       <div class="card"> -->
-<!--         <img class="card-img-top img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample19.jpg" alt="Card image cap"> -->
-<!--         <div class="card-block"> -->
-<!--           <h4 class="card-title">Grouped</h4> -->
-<!--           <p class="card-text">Use card groups to render equal height cards without gutters between the cards. Use <code>.card-deck</code> for cards that aren’t attached to each another.</p> -->
-<!--         </div> -->
-<!--       </div> -->
-      <!-- card -->
-<!--       <div class="card"> -->
-<!--         <img class="card-img-top img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample14.jpg" alt="Card image cap"> -->
-<!--         <div class="card-block"> -->
-<!--           <h4 class="card-title">Same Height</h4> -->
-<!--           <p class="card-text">A frequent problem occurs when you have multiple items in a row with content of varying height. Thanks to flexbox (and display:table) we now have equal height cards!</p> -->
-<!--         </div> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </section> -->
-
-<!-- <section id="two" class="bg-alt"> -->
-<!--   <div class="container"> -->
-<!--     <div class="row"> -->
-<!--       <div class="col-lg-12 text-xs-center"> -->
-<!--         <h2 class="m-t-0 text-primary">Flexbox</h2> -->
-<!--         <hr class="primary"> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!--   <div class="container wow fadeInUp"> -->
-<!--     <div class="row"> -->
-<!--       <div class="col-lg-4 col-md-4 text-xs-center"> -->
-<!--         <div class="feature"> -->
-<!--           <i class="icon-lg ion-ios-grid-view-outline wow fadeIn" data-wow-delay=".1s"></i> -->
-<!--           <h6 class="text-uppercase">Easier</h6> -->
-<!--           <p class="text-muted m-b-0">Flexbox provides <a href="http://v4-alpha.getbootstrap.com/getting-started/flexbox">simpler, more flexible layout</a> options like vertical centering.</p> -->
-<!--         </div> -->
-<!--       </div> -->
-<!--       <div class="col-lg-4 col-md-4 text-xs-center"> -->
-<!--         <div class="feature"> -->
-<!--           <i class="icon-lg ion-social-sass wow fadeInUp"></i> -->
-<!--           <h6 class="text-uppercase">Sass-y</h6> -->
-<!--           <p class="text-muted m-b-0">Simply set the <code>$enable-flex</code> variable to <a target="ext" href="http://codeply.com/go/YFFFWHVoRB">enable flexbox</a> in Bootstrap 4.</p> -->
-<!--         </div> -->
-<!--       </div> -->
-<!--       <div class="col-lg-4 col-md-4 text-xs-center"> -->
-<!--         <div class="feature"> -->
-<!--           <i class="icon-lg ion-social-css3-outline wow fadeIn" data-wow-delay=".1s"></i> -->
-<!--           <h6 class="text-uppercase">It's Modern</h6> -->
-<!--           <p class="text-muted m-b-0">Introduced in CSS3, flexbox won't work in older browsers like <a href="http://caniuse.com/#feat=flexbox">IE9</a>.</p> -->
-<!--         </div> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </section> -->
-<!-- <section id="three"> -->
-<!--   <div class="container-fluid"> -->
-<!--     <h5 class="text-primary text-xs-center text-uppercase">Now there are 5 Breakpoints</h5> -->
-<!--     <p class="text-xs-center"><small>To accomodate a variety of devices and screen widths</small></p> -->
-<!--     <div class="row"> -->
-<!--       <div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0"> -->
-<!--         <div class="row"> -->
-<!--           <div class="col-md-2 col-md-offset-1 col-sm-offset-0"> -->
-<!--             <div class="card-block text-xs-center"> -->
-<!--               <h1 class="card-title">XS</h1> -->
-<!--               <h3 class="text-muted">&lt;34 em</h3> -->
-<!--               <hr class="primary hidden-sm-up"/> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-md-2"> -->
-<!--             <div class="card-block text-xs-center"> -->
-<!--               <h1 class="card-title">SM</h1> -->
-<!--               <h3 class="text-muted">≥34 em</h3> -->
-<!--               <hr class="primary hidden-md-up"/> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-md-2"> -->
-<!--             <div class="card-block text-xs-center"> -->
-<!--               <h1 class="card-title">MD</h1> -->
-<!--               <h3 class="text-muted">≥48 em</h3> -->
-<!--               <hr class="primary hidden-lg-up"/> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-md-2"> -->
-<!--             <div class="card-block text-xs-center"> -->
-<!--               <h1 class="card-title">LG</h1> -->
-<!--               <h3 class="text-muted">≥62 em</h3> -->
-<!--               <hr class="primary hidden-xl-up"/> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-md-2"> -->
-<!--             <div class="card-block text-xs-center"> -->
-<!--               <h1 class="card-title">XL</h1> -->
-<!--               <h3 class="text-muted">≥75 em</h3> -->
-<!--               <hr class="primary"/> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--         </div> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--     <div class="row"> -->
-<!--       <div class="col-xs-10 col-xs-offset-1"> -->
-<!--         <div class="row"> -->
-<!--           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card"> -->
-<!--               <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample14.jpg" class="img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card"> -->
-<!--               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample20.jpg" class="img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card card-inverse"> -->
-<!--               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample22.jpg" class="img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card"> -->
-<!--               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" class="img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card"> -->
-<!--               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample35.jpg" class="img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample35.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card"> -->
-<!--               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" class="img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card"> -->
-<!--               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample13.jpg" class="card-img img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample13.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card"> -->
-<!--               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample11.jpg" class="img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample11.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card"> -->
-<!--               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample23.jpg" class="img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card"> -->
-<!--               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample9.jpg" class="card-img img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample9.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card"> -->
-<!--               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample5.jpg" class="img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample5.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card"> -->
-<!--               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample4.jpg" class="img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample4.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card"> -->
-<!--               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" class="card-img img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card"> -->
-<!--               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample2.jpg" class="img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample2.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card"> -->
-<!--               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample7.jpg" class="img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample7.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="col-xl-3 col-xl-offset-0 col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-4 col-sm-6 text-xs-center"> -->
-<!--             <div class="card center-block"> -->
-<!--               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample21.jpg" class="img-fluid"> -->
-<!--               <div class="card-img-overlay"> -->
-<!--                 <h4 class="card-title text-xs-center"> -->
-<!--                   <a class="text-light" href="#galleryModal" data-toggle="modal" data-src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample21.jpg">view</a> -->
-<!--                 </h4> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--         </div> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!--   <br> -->
-<!-- </section> -->
-<!-- <aside class="bg-alt"> -->
-<!--   <div class="container text-xs-center"> -->
-<!--     <h2 class="text-primary text-xs-center">The Grid is More Flexible</h2> -->
-<!--     <hr class="primary"> -->
-<!--     <br> -->
-<!--     <div class="row wow fadeInUp"> -->
-<!--       <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center"> -->
-<!--         <h3>Start</h3> -->
-<!--         <i class="icon-lg ion-ios-speedometer-outline wow pulse"></i> -->
-<!--         <h1 class="text-primary">100</h1> -->
-<!--       </div> -->
-<!--       <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center"> -->
-<!--         <h3>Migrate</h3> -->
-<!--         <i class="icon-lg ion-ios-location-outline wow pulse"></i> -->
-<!--         <h1 class="text-primary">3421</h1> -->
-<!--       </div> -->
-<!--       <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center"> -->
-<!--         <h3>Build</h3> -->
-<!--         <i class="icon-lg ion-ios-pulse wow pulse"></i> -->
-<!--         <h1 class="text-primary">4%</h1> -->
-<!--       </div> -->
-<!--       <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center"> -->
-<!--         <h3>Play</h3> -->
-<!--         <i class="icon-lg ion-ios-game-controller-b-outline wow pulse"></i> -->
-<!--         <h1 class="text-primary">50%</h1> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--     <hr> -->
-<!--     <br> -->
-<!--   </div> -->
-<!--   <div class="container"> -->
-<!--     <div class="row"> -->
-<!--       <div class="col-sm-6"> -->
-<!--         6 -->
-<!--       </div> -->
-<!--       <div class="col-sm-6 text-normal"> -->
-<!--         <div class="card bg-primary"> 6 units </div> -->
-<!--       </div> -->
-<!--       <div class="col-sm-5"> -->
-<!--         5 -->
-<!--       </div> -->
-<!--       <div class="col-sm-7 text-normal"> -->
-<!--         <div class="card bg-primary"> 7 units </div> -->
-<!--       </div> -->
-<!--       <div class="col-sm-4"> -->
-<!--         4 -->
-<!--       </div> -->
-<!--       <div class="col-sm-8 text-normal"> -->
-<!--         <div class="card bg-primary"> 8 units </div> -->
-<!--       </div> -->
-<!--       <div class="col-sm-3"> -->
-<!--         3 -->
-<!--       </div> -->
-<!--       <div class="col-sm-9 text-normal"> -->
-<!--         <div class="card bg-primary"> 9 units </div> -->
-<!--       </div> -->
-<!--       <div class="col-sm-2"> -->
-<!--         2 -->
-<!--       </div> -->
-<!--       <div class="col-sm-10 text-normal"> -->
-<!--         <div class="card bg-primary"> 10 units </div> -->
-<!--       </div> -->
-<!--       <div class="col-sm-1"> -->
-<!--         1 -->
-<!--       </div> -->
-<!--       <div class="col-sm-11 text-normal"> -->
-<!--         <div class="card bg-primary"> 11 units </div> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!--   <hr /> -->
-<!--   <div class="container"> -->
-<!--     <div class="row"> -->
-<!--       <div class="col-lg-2 text-normal"> -->
-<!--         <div class="card bg-primary"> 2 </div> -->
-<!--       </div> -->
-<!--       <div class="col-lg-10"> -->
-
-<!--       </div> -->
-<!--       <div class="col-lg-4 text-normal"> -->
-<!--         <div class="card bg-primary"> 4 </div> -->
-<!--       </div> -->
-<!--       <div class="col-lg-8"> -->
-
-<!--       </div> -->
-<!--       <div class="col-lg-6 text-normal"> -->
-<!--         <div class="card bg-primary"> 6 </div> -->
-<!--       </div> -->
-<!--       <div class="col-lg-6"> -->
-
-<!--       </div> -->
-<!--       <div class="col-lg-8 text-normal"> -->
-<!--         <div class="card bg-primary"> 8 </div> -->
-<!--       </div> -->
-<!--       <div class="col-lg-4"> -->
-
-<!--       </div> -->
-<!--       <div class="col-lg-10 text-normal"> -->
-<!--         <div class="card bg-primary"> 10 </div> -->
-<!--       </div> -->
-<!--       <div class="col-lg-2"> -->
-
-<!--       </div> -->
-<!--       <div class="col-lg-12 text-normal"> -->
-<!--         <div class="card bg-primary"> 12 </div> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </aside> -->
-
-<!-- <section id="four"> -->
-<!--   <div class="container"> -->
-<!--     <div class="row"> -->
-<!--       <div class="col-xs-12 col-lg-6"> -->
-<!--         <h2 class="text-nowrap">Fonts got larger</h2> -->
-<!--       </div> -->
-<!--       <div class="col-xs-12 col-lg-6 text-xs-right"> -->
-<!--         <button class="btn btn-lg text-normal btn-secondary-outline">Outline</button> -->
-<!--         <button class="btn btn-lg text-normal btn-primary-outline">Buttons</button> -->
-<!--         <button class="btn btn-lg text-normal btn-danger-outline">Are Here</button> -->
-<!--       </div> -->
-<!--       <div class="col-xs-12"> -->
-<!--         <br/> -->
-<!--         <h1 class="display-4">Wow.</h1> -->
-<!--         <p class="lead text-justify">Text is larger in Bootstrap 4. The default font size is now 16px. There are also new "Display headings" that really stand out. The new `em` based sizing is cool too.</p> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--     <hr/> -->
-<!--     <div class="row"> -->
-<!--       <div class="col-md-6 col-xs-12 text-xs-center"> -->
-<!--         <nav class="navbar navbar-dark bg-inverse text-normal"> -->
-<!--           <ul class="nav navbar-nav"> -->
-<!--             <li class="nav-item active"> -->
-<!--               <a class="nav-link" href="#">Home</a> -->
-<!--             </li> -->
-<!--             <li class="nav-item"> -->
-<!--               <a class="nav-link" href="#">Features</a> -->
-<!--             </li> -->
-<!--             <li class="nav-item"> -->
-<!--               <a class="nav-link" href="#">Pricing</a> -->
-<!--             </li> -->
-<!--             <li class="nav-item"> -->
-<!--               <a class="nav-link" href="#">About</a> -->
-<!--             </li> -->
-<!--           </ul> -->
-<!--         </nav> -->
-<!--       </div> -->
-<!--       <div class="col-md-6 col-xs-12"> -->
-<!--         <h2>Navbar</h2> -->
-<!--         <p class="text-justify">The new Bootstrap 4 <code>.navbar</code> code is lighter. You can make it responsive using the Collapse component and <code>.navbar-toggleable-*</code> classes that enable you to control the breakpoint.</p> -->
-<!--       </div> -->
-<!--       <div class="col-xs-12 clearfix"> -->
-<!--         <hr> -->
-<!--       </div> -->
-<!--       <div class="col-md-6 col-xs-12"> -->
-<!--         <h2>RIP icons, affix, etc..</h2> -->
-<!--         <p class="text-justify">Some components have been removed from Bootstrap 4. The Glyphicons icon fonts are no longer included, but it's easy to --> 
-<!--           utilize another font like FontAwesome, <a href="https://octicons.github.com/">Octicons</a> or <a href="http://ionicons.com/">Ionicons</a>. -->
-<!--           The Affix jQuery plugin has also been dropped. The new recommendation is to use HTML5 position: sticky or a sticky polyfill instead. -->
-<!--         </p> -->
-<!--       </div> -->
-<!--       <div class="col-md-6 col-xs-12 text-xs-center"> -->
-<!--         <div class="row"> -->
-<!--           <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center"> -->
-<!--             <a href="#alertModal" data-toggle="modal" data-target="#alertModal"><i class="icon-lg ion-ios-cloud-download-outline wow fadeIn"></i></a> -->
-<!--           </div> -->
-<!--           <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center"> -->
-<!--             <i class="icon-lg ion-ios-pie-outline wow fadeIn text-primary"></i> -->
-<!--           </div> -->
-<!--           <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center"> -->
-<!--             <i class="icon-lg ion-ios-star-outline wow fadeIn text-primary"></i> -->
-<!--           </div> -->
-<!--           <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center"> -->
-<!--             <i class="icon-lg ion-ios-heart-outline wow fadeIn text-primary"></i> -->
-<!--           </div> -->
-<!--           <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center"> -->
-<!--             <i class="icon-lg ion-ios-pulse wow fadeIn text-primary"></i> -->
-<!--           </div> -->
-<!--           <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center"> -->
-<!--             <i class="icon-lg ion-ios-refresh-outline wow fadeIn text-primary"></i> -->
-<!--           </div> -->
-<!--           <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center"> -->
-<!--             <i class="icon-lg ion-ios-gear-outline wow fadeIn text-primary"></i> -->
-<!--           </div> -->
-<!--           <div class="col-lg-3 col-md-3 col-xs-6 text-xs-center"> -->
-<!--             <i class="icon-lg ion-ios-timer-outline wow fadeIn text-primary"></i> -->
-<!--           </div> -->
-<!--         </div> -->
-<!--       </div> -->
-<!--       <div class="col-xs-12 clearfix"> -->
-<!--         <hr> -->
-<!--       </div> -->
-<!--       <div class="col-md-6 col-xs-12"> -->
-<!--         <div class="card text-normal"> -->
-<!--           <div class="card-block"> -->
-<!--             <ul class="list-unstyled"> -->
-<!--               <li class="text-capitalize"><code class="text-lowercase">text-capitalize</code> Capitalize each word</li> -->
-<!--               <li class="text-uppercase"><code class="text-lowercase">text-uppercase</code> Uppercase text</li> -->
-<!--               <li class="text-lowercase"><code>text-lowercase</code> There is lowercase too</li> -->
-<!--               <li><small>But where is text-truncate with text-overflow:ellipsis?</small></li> -->
-<!--             </ul> -->
-<!--             <h6>Migration tips</h6> -->
-<!--             <ul class="list-unstyled"> -->
-<!--               <li><code>text-center</code> = <code>text-xs-center</code></li> -->
-<!--               <li><code>text-right</code> = <code>text-xs-right</code></li> -->
-<!--               <li><code>pull-right</code> = <code>pull-xs-right</code></li> -->
-<!--               <li><code>img-responsive</code> = <code>img-fluid</code></li> -->
-<!--               <li><code>list-inline > li</code> = <code>list-inline-item</code></li> -->
-<!--               <li>add <code>nav-item</code> to nav navbar > li</li> -->
-<!--               <li>add <code>nav-link</code> to nav navbar > li > a</li> -->
-<!--               <li>the <code>active</code> class is added to <code>nav-item</code> for scrollspy</li> -->
-<!--               <li><code>carousel-inner > item</code> = <code>carousel-item</code></li> -->
-<!--               <li><code>table-condensed</code> = <code>table-sm</code></li> -->
-<!--             </ul> -->
-<!--             <a href="https://medium.com/wdstack/bootstrap-4-whats-new-visual-guide-c84dd81d8387">More on What's New in Bootstrap 4</a> -->
-<!--           </div> -->
-<!--         </div> -->
-<!--       </div> -->
-<!--       <div class="col-md-6 col-xs-12"> -->
-<!--         <h2>Handy utilities</h2> -->
-<!--         <p class="text-justify">Several simple, but useful <a href="http://v4-alpha.getbootstrap.com/components/utilities">utility classes</a> have been added like text, margin and padding helpers. There are -->
-<!--           also <a href="http://v4-alpha.getbootstrap.com/components/utilities/#contextual-colors-and-backgrounds">contextual colors</a> and --> 
-<!--           <a href="http://v4-alpha.getbootstrap.com/layout/responsive-utilities/">responsive utility</a> classes to hide content on --> 
-<!--           specific breakpoints. There's even a new fluid Jumbotron!</p> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </section> -->
-<!-- <aside class="bg-alt"> -->
-<!--   <div class="container text-xs-center"> -->
-<!--     <div class="call-to-action"> -->
-<!--       <h2 class="text-primary">Get Started</h2> -->
-<!--       <a href="http://www.codeply.com/download/kNmg5E60WS" target="ext" class="btn btn-primary-outline btn-lg wow flipInX text-uppercase">Free Download</a> -->
-<!--     </div> -->
-<!--     <br> -->
-<!--     <hr> -->
-<!--     <br> -->
-<!--     <div class="row"> -->
-<!--       <div class="col-lg-10 col-lg-offset-1"> -->
-<!--         <div class="row"> -->
-<!--           <h6 class="wide-space text-xs-center text-uppercase">Bootstrap 4 is Built on these Standards</h6> -->
-<!--           <div class="col-sm-3 col-xs-6 text-xs-center"> -->
-<!--             <i class="icon-lg ion-social-html5-outline" title="html 5"></i> -->
-<!--           </div> -->
-<!--           <div class="col-sm-3 col-xs-6 text-xs-center"> -->
-<!--             <i class="icon-lg ion-social-sass" title="sass"></i> -->
-<!--           </div> -->
-<!--           <div class="col-sm-3 col-xs-6 text-xs-center"> -->
-<!--             <i class="icon-lg ion-social-javascript-outline" title="javascript"></i> -->
-<!--           </div> -->
-<!--           <div class="col-sm-3 col-xs-6 text-xs-center"> -->
-<!--             <i class="icon-lg ion-social-css3-outline" title="css 3"></i> -->
-<!--           </div> -->
-<!--         </div> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </aside> -->
-<!-- <section id="last"> -->
-<!--   <div class="container"> -->
-<!--     <div class="row"> -->
-<!--       <div class="col-lg-8 col-lg-offset-2 text-xs-center"> -->
-<!--         <h2 class="margin-top-0 wow fadeIn">Get in Touch</h2> -->
-<!--         <hr class="primary"> -->
-<!--         <p>We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p> -->
-<!--       </div> -->
-<!--       <div class="col-lg-10 col-lg-offset-1 text-xs-center"> -->
-<!--         <form class="contact-form row"> -->
-<!--           <div class="col-md-4"> -->
-<!--             <label></label> -->
-<!--             <input type="text" class="form-control" placeholder="Name"> -->
-<!--           </div> -->
-<!--           <div class="col-md-4"> -->
-<!--             <label></label> -->
-<!--             <input type="text" class="form-control" placeholder="Email"> -->
-<!--           </div> -->
-<!--           <div class="col-md-4"> -->
-<!--             <label></label> -->
-<!--             <input type="text" class="form-control" placeholder="Phone"> -->
-<!--           </div> -->
-<!--           <div class="col-md-12"> -->
-<!--             <label></label> -->
-<!--             <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea> -->
-<!--           </div> -->
-<!--           <div class="col-md-4 col-md-offset-4"> -->
-<!--             <label></label> -->
-<!--             <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i></button> -->
-<!--           </div> -->
-<!--         </form> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </section> -->
-<!-- <footer id="footer"> -->
-<!--   <div class="container"> -->
-<!--     <div class="row"> -->
-<!--       <div class="col-xs-6 col-sm-3"> -->
-<!--         <h6 class="text-uppercase">Information</h6> -->
-<!--         <ul class="list-unstyled"> -->
-<!--           <li><a href="">Products</a></li> -->
-<!--           <li><a href="">Services</a></li> -->
-<!--           <li><a href="">Benefits</a></li> -->
-<!--           <li><a href="">Developers</a></li> -->
-<!--         </ul> -->
-<!--       </div> -->
-<!--       <div class="col-xs-6 col-sm-3 column"> -->
-<!--         <h6 class="text-uppercase">About</h6> -->
-<!--         <ul class="list-unstyled"> -->
-<!--           <li><a href="#">Contact Us</a></li> -->
-<!--           <li><a href="#">Delivery Information</a></li> -->
-<!--           <li><a href="#">Privacy Policy</a></li> -->
-<!--           <li><a href="#">Terms &amp; Conditions</a></li> -->
-<!--         </ul> -->
-<!--       </div> -->
-<!--       <div class="col-xs-12 col-sm-3 column"> -->
-<!--         <h6 class="text-uppercase">Stay Posted</h6> -->
-<!--         <form> -->
-<!--           <div class="form-group"> -->
-<!--             <input type="text" class="form-control" title="No spam, we promise!" placeholder="Tell us your email"> -->
-<!--           </div> -->
-<!--           <div class="form-group"> -->
-<!--             <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Subscribe for updates</button> -->
-<!--           </div> -->
-<!--         </form> -->
-<!--       </div> -->
-<!--       <div class="col-xs-12 col-sm-3 text-xs-right"> -->
-<!--         <h6 class="text-uppercase">Follow</h6> -->
-<!--         <ul class="list-inline"> -->
-<!--           <li class="list-inline-item"><a rel="nofollow" href="" title="Twitter"><i class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;</li> -->
-<!--           <li class="list-inline-item"><a rel="nofollow" href="" title="Facebook"><i class="icon-lg ion-social-facebook-outline"></i></a></li> -->
-<!--         </ul> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--     <br> -->
-<!--     <span class="pull-right text-muted small"><a href="http://themes.guide">Made by Themes.guide</a> ©2015-2016</span> -->
-<!--   </div> -->
-<!-- </footer> -->
-<!-- <div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"> -->
-<!--   <div class="modal-dialog"> -->
-<!--     <div class="modal-content"> -->
-<!--       <div class="modal-body"> -->
-<!--         <img src="//placehold.it/1200x700/222?text=..." id="galleryImage" class="center-block img-fluid"> -->
-<!--         <p> -->
-<!--           <br> -->
-<!--           <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Close <i class="ion-android-close"></i></button> -->
-<!--         </p> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </div> -->
-
-<!-- <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"> -->
-<!--   <div class="modal-dialog"> -->
-<!--     <div class="modal-content"> -->
-<!--       <div class="modal-body"> -->
-<!--         <h2 class="text-xs-center">Bootstrap 4 Theme</h2> -->
-<!--         <h6 class="text-xs-center">A free, responsive template</h6> -->
-<!--         <p class="text-xs-center"> -->
-<!--           This is a customized, single page example template that demonstrates some of the new features to check out in Bootstrap 4. Some of the features include Google Montserrat fonts, animation using Dan Eden's animate.css and the WOW jQuery plugin to watch the scrolling. -->
-<!--         </p> -->
-<!--         <p class="text-xs-center"><a href="http://www.codeply.com/download/kNmg5E60WS">Download</a></p> -->
-<!--         <br> -->
-<!--         <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK </button> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </div> -->
-
-<!-- <div class="container"> -->
-<!--   <div class="row"> -->
-<!--     <div class="col-md-4 landing-content"> -->
-<!--       <p>This is James Washington's <a href="">personal website</a>.</p> -->
-<!--       <p>He is currently studying at the<a href="http://www.uark.edu/"> University of Arkansas</a>.</p> -->
-<!--       <p>Follow him on <a href="https://www.instagram.com/jbw014">Instagram</a> or <a href="https://www.twitter.com/jbw014">Twitter</a>, check out his <a class="projects" href="https://www.github.com/jbwashington">personal projects</a>, read his <a href="/blog.html">blog</a>, or send him an <a href="mailto:jbwashington@gmail.com">email</a>.</p> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </div> -->
-
-</div>
-
-        </div>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" ></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" ></script> -->
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -743,5 +84,7 @@
 
 </script>
 
+
   </body>
+
 </html>
