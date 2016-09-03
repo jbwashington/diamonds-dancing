@@ -13,7 +13,7 @@
 }
 
 .navbar-toggler.navbar-custom {
-  background: $black;
+  background: $darkergray;
   border-radius: 0;
   color: $white;
   margin: 0;
@@ -24,67 +24,8 @@
   transform: scale(1.3);
 }
 
-.modal-menu {
-  border-radius: 0;
-  color: $white;
-  height: 100%;
-  margin: 0;
-
-  .modal-header {
-    border: 0;
-  }
-
-  .modal-body {
-    position: relative;
-    top: 25%;
-  }
-
-  .modal-content {
-    background: $brand-primary;
-    border-radius: 0;
-    height: 100%;
-    width: 100%;
-  }
-
-  .modal-menu {
-    margin: 0;
-  }
-
-  .close {
-    transform: scale(2);
-  }
-
-  .modal-nav-group {
-
-    ul {
-      color: $white;
-      line-height: 2rem;
-      list-style-type: none;
-      text-align: center;
-    }
-
-  }
-
-  .modal-nav-items {
-    font-size: 2.4rem;
-    list-style-type: none;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  a {
-    color: $white;
-  }
-
-  .social-group {
-    text-align: center;
-  }
-}
-
-.social {
-  color: $white;
-}
 
 .intro {
   font-size: 2.5rem;
 }
+

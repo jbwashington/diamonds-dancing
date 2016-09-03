@@ -1,0 +1,62 @@
+.modal-menu {
+  border-radius: 0;
+  color: $white;
+  height: 100%;
+  margin: 0;
+
+  .modal-header {
+    border: 0;
+  }
+
+  .modal-body {
+    position: relative;
+    top: 0;
+  }
+
+  .modal-content {
+    background: $white;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .modal-menu {
+    margin: 0;
+  }
+
+  .close {
+    transform: scale(2);
+  }
+
+  .modal-nav-group {
+
+    ul {
+      color: $white;
+      line-height: 1rem;
+      list-style-type: none;
+    }
+
+  }
+
+  .modal-nav-items {
+    font-size: 3.4rem;
+    font-weight: 700;
+    list-style-type: none;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: $darkergray;
+  }
+
+  .social-group {
+    text-align: center;
+  }
+}
+
+.social {
+  color: $black;
+  text-align: left;
+}
+
