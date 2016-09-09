@@ -17304,9 +17304,9 @@ body {
   font-family: "inconsolata", "courier", monospace; }
 
 footer {
-  padding: 45px;
-  padding-top: 40px;
-  background-color: #e0e0e3; }
+  bottom: 0;
+  position: fixed;
+  width: 100%; }
 
 footer h4,
 footer h6 {
