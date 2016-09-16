@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Download And Play Any Song From Command Line Instantly
 ---
 
