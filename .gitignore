@@ -37,7 +37,7 @@ Thumbs.db
 bower_components
 node_modules
 .tmp
-_site/
+_site
 
 # Ignore for RVM users #
 .ruby-version

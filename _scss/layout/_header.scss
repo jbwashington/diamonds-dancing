@@ -6,21 +6,25 @@
 // HEADER
 /////////
 
-header {
+.intro {
+  display: block;
+  font-family: $header-font;
+  margin: 2rem;
+  font-size: 6rem;
 
-  h2 {
-    color: $header-color;
-    font-family: $header-font;
-    font-size: $h2-size;
-    font-weight: 500;
-    padding: 1rem 2rem .4rem .8rem;
+  ul {
+    margin-left: 0;
   }
 
-  .intro {
-    font-size: 1.6rem;
-  }
-}
+  li {
+    font-size: 3rem;
+    line-height: 5rem;
+    letter-spacing: .8rem;
+    text-transform: uppercase;
 
-.splash {
-  padding: 1.6rem;
+  }
+
+  a {
+    // text-decoration: underline;
+  }
 }
