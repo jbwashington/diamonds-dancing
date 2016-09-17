@@ -17282,14 +17282,18 @@ hr {
 .svg-container-2x-height {
   padding-bottom: 200%; }
 
+html {
+  background: url(https://media.giphy.com/media/6Gwvt8nKPATS0/giphy.gif) no-repeat center center fixed;
+  background-size: cover; }
+
 html,
 body {
   height: 100%;
   width: 100%; }
 
 body {
-  background-color: #fbfbfb;
   color: #231f20;
+  background-color: transparent;
   font-family: "inconsolata", "courier", monospace;
   height: inherit;
   tap-highlight-color: #bbff00; }
