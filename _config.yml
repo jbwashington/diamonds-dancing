@@ -3,6 +3,8 @@ markdown: redcarpet
 highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 site: "https://jameswashington.me"
+disqus: jbw014
 collections:
   work:
     output: true
+

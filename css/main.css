@@ -26944,6 +26944,26 @@ footer h6 {
 .svg-container-2x-height {
   padding-bottom: 200%; }
 
+.content {
+  padding-top: 3rem; }
+
+section {
+  min-height: 600px;
+  padding: 100px 0; }
+
+aside {
+  padding: 45px 0; }
+
+.list-group-item,
+.card-footer {
+  background-color: transparent; }
+
+textarea {
+  resize: none; }
+
+body {
+  background-color: #000; }
+
 article,
 aside,
 details,
