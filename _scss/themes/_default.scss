@@ -1,28 +1,31 @@
 @import 'helpers/variables';
 
-// .content {
-//   padding-top: 3rem;
-// }
+.content {
+  padding-top: 3rem;
+}
 
-// section {
-//   min-height: 600px;
-//   padding: 100px 0;
-// }
+section {
+  min-height: 600px;
+  padding: 100px 0;
+}
 
-// aside {
+aside {
 
-//   padding: 45px 0;
-// }
+  padding: 45px 0;
+}
 
-// .list-group-item,
-// .card-footer {
-//   background-color: transparent;
-// }
+.list-group-item,
+.card-footer {
+  background-color: transparent;
+}
 
-// textarea {
-//   resize: none;
-// }
+textarea {
+  resize: none;
+}
 
+body {
+  background-color: $black;
+}
 
 article,
 aside,

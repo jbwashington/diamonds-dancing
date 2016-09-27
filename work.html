@@ -1,43 +1,17 @@
 ---
 layout: default
-image:
-  - image_path: /img/flyink-thumb.jpg
-    title: Fly Ink
-  - image_path: /img/coulson-thumb.jpg
-    title: Coulson Drive Management
-  - image_path: /img/3pf-thumb.jpg
-    title: 3 Phase Fitness
-  - image_path: /img/connectchurch-thumb.jpg
-    title: The Connect Church
-  - image_path: /img/gapsnow-thumb.jpg
-    title: Grands As Parents
-  - image_path: /img/ln-thumb.jpg
-    title: Londyn Nichole
-  - image_path: /img/luckybirds-thumb.jpg
-    title: Lucky Birds Unlimited
-  - image_path: /img/nfbpaglr-thumb.jpg
-    title: National Foundation of Black Public Administrators
-  - image_path: /img/uark-thumb.jpg
-    title: Center For Community Engagement
+title: Work
 ---
 
-<ul class="photo-gallery">
-  {% for image in page.images %}
-    <li><img src="{{ image.image_path }}" alt="{{ image.title }}"/></li>
-  {% endfor %}
-</ul>
-
-<!-- <div class="container"> -->
-<!--   <div class="row"> -->
-<!--     {% for image in page.img %} -->
-<!--     <div class="col-xs-12 col-sm-6"> -->
-<!--       <div class="card"> -->
-<!--         <img class="card-img-top" src="{{ image.image_path }}" alt="{{ image.title }}"/> -->
-<!--       </div> -->
-<!--       <div class="card-block"> -->
-<!--         <p class="card-text">{{ image.title }}</p> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--     {% endfor %} -->
-<!--   </div> -->
-<!-- </div> -->
+<div class="album">
+  <div class="container">
+    <div class="row">
+      {% for image in site.work %}
+      <div class="card">
+        <img src="{{ image.image_path }}" alt="{{ image.title }}">
+        <p class="card-text">{{ image.title }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

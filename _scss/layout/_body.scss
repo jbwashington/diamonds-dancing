@@ -1,7 +1,7 @@
+@import 'vendors/bootstrap';
 @import 'helpers/variables';
 
 html {
-  background: url(https://media.giphy.com/media/6Gwvt8nKPATS0/giphy.gif) no-repeat center center fixed;
   background-size: cover;
 
 }
@@ -13,14 +13,19 @@ body {
 }
 
 body {
-  color: $body-color;
-  background-color: transparent;
+  background-color: $black;
+  color: $white;
   font-family: $body-font;
-  height: inherit;
   tap-highlight-color: $brand-tertiary;
 
 }
 
 .content {
   font-family: $body-font;
+}
+
+.wrapper {
+  background-color: $black;
+  border-style: solid;
+  border-color: $red;
 }
