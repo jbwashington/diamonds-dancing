@@ -1,11 +1,12 @@
 @import 'vendors/bootstrap';
 @import 'vendors/font-awesome';
 
+@import 'base/reset';
+
 @import 'helpers/variables';
 @import 'helpers/mixins';
 @import 'helpers/functions';
 
-@import 'base/reset';
 @import 'base/typography';
 
 @import 'components/buttons';

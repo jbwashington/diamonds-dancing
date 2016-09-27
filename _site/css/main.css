@@ -6985,32 +6985,6 @@ a.bg-danger:focus, a.bg-danger:hover {
   overflow: visible;
   clip: auto; }
 
-.svg-container {
-  display: inline-block;
-  height: 0;
-  overflow: hidden;
-  padding: 0;
-  padding-bottom: 100%;
-  position: relative;
-  vertical-align: middle;
-  width: 100%; }
-
-.svg-container-2x-height {
-  padding-bottom: 200%; }
-
-.svg-container {
-  display: inline-block;
-  height: 0;
-  overflow: hidden;
-  padding: 0;
-  padding-bottom: 100%;
-  position: relative;
-  vertical-align: middle;
-  width: 100%; }
-
-.svg-container-2x-height {
-  padding-bottom: 200%; }
-
 /***************/
 /* MEYER RESET */
 /***************/
@@ -7058,6 +7032,32 @@ table {
 
 *, *:before, *:after {
   box-sizing: border-box; }
+
+.svg-container {
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 100%;
+  position: relative;
+  vertical-align: middle;
+  width: 100%; }
+
+.svg-container-2x-height {
+  padding-bottom: 200%; }
+
+.svg-container {
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 100%;
+  position: relative;
+  vertical-align: middle;
+  width: 100%; }
+
+.svg-container-2x-height {
+  padding-bottom: 200%; }
 
 .svg-container {
   display: inline-block;
@@ -7176,6 +7176,21 @@ hr {
   hr .primary {
     border-color: #ff305b;
     opacity: 1; }
+
+a {
+  background: #ed1c24;
+  color: #fbfbfb;
+  padding: .2rem; }
+  a:hover {
+    background: #ed1c24;
+    color: #fbfbfb;
+    padding: .2rem;
+    text-decoration: none; }
+  a:active {
+    background: #ed1c24;
+    color: #fbfbfb;
+    padding: 1rem;
+    text-decoration: none; }
 
 .btn.btn-primary {
   background-color: transparent;
@@ -12295,20 +12310,23 @@ a.bg-danger:focus, a.bg-danger:hover {
   padding-bottom: 200%; }
 
 .navbar.navbar-logo {
-  background: #000;
   left: 0;
   position: absolute;
   top: 0; }
 
 .navbar-toggler.navbar-custom {
-  background: #231f20;
+  background: #ed1c24;
   border-radius: 0;
   color: #fbfbfb;
-  margin: 0;
-  padding: 1rem;
+  margin: 1.2rem;
   position: absolute;
   right: 0;
   top: 0; }
+
+.navbar-brand {
+  background: transparent; }
+  .navbar-brand:hover {
+    background: transparent; }
 
 .modal-menu {
   border-radius: 0;
@@ -12348,6 +12366,20 @@ a.bg-danger:focus, a.bg-danger:hover {
 .social {
   color: #000;
   text-align: left; }
+
+.modal-menu a {
+  color: #231f20;
+  background: white; }
+  .modal-menu a:hover {
+    background: #ed1c24;
+    color: #fbfbfb;
+    padding: 1rem;
+    text-decoration: none; }
+  .modal-menu a:active {
+    background: #ed1c24;
+    color: #fbfbfb;
+    padding: 1rem;
+    text-decoration: none; }
 
 /*!
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
@@ -17257,6 +17289,21 @@ hr {
     border-color: #ff305b;
     opacity: 1; }
 
+a {
+  background: #ed1c24;
+  color: #fbfbfb;
+  padding: .2rem; }
+  a:hover {
+    background: #ed1c24;
+    color: #fbfbfb;
+    padding: .2rem;
+    text-decoration: none; }
+  a:active {
+    background: #ed1c24;
+    color: #fbfbfb;
+    padding: 1rem;
+    text-decoration: none; }
+
 .intro {
   display: block;
   font-family: "roboto", arial, sans-serif;
@@ -17378,3 +17425,22 @@ section {
 
 .svg-container-2x-height {
   padding-bottom: 200%; }
+
+.posts {
+  color: #fbfbfb; }
+  .posts a {
+    background: #ed1c24;
+    color: #fbfbfb;
+    padding: .2rem; }
+    .posts a:hover {
+      background: #ed1c24;
+      color: #fbfbfb;
+      padding: .2rem;
+      text-decoration: none; }
+    .posts a:active {
+      background: #ed1c24;
+      color: #fbfbfb;
+      padding: 1rem;
+      text-decoration: none; }
+  .posts ul {
+    line-height: 3rem; }

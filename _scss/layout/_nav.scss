@@ -6,19 +6,25 @@
 /////////////
 
 .navbar.navbar-logo {
-  background: $black;
   left: 0;
   position: absolute;
   top: 0;
 }
 
 .navbar-toggler.navbar-custom {
-  background: $darkergray;
+  background: $red;
   border-radius: 0;
   color: $white;
-  margin: 0;
-  padding: 1rem;
+  margin: 1.2rem;
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.navbar-brand {
+  background: transparent;
+
+  &:hover {
+    background: transparent;
+  }
 }
