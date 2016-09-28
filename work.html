@@ -8,7 +8,7 @@ title: Work
     <div class="row">
       {% for image in site.work %}
       <div class="card">
-        <img src="{{ image.image_path }}" alt="{{ image.title }}">
+        <img class="img-fluid" src="{{ image.image_path }}" alt="{{ image.title }}">
         <p class="card-text">{{ image.title }}</p>
       </div>
       {% endfor %}
