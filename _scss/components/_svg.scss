@@ -11,12 +11,12 @@
   width: 100%; // only required for <img />
 }
 
-.svg-container {
-  @include background-image('opener');
-  @include svg-responsive(7rem, 7rem, 100%); // arguments are ($svgwidth, $svgheight, $containerwidth)
-  margin: 0 auto auto 0;
-  max-width: 90%;
-}
+// .svg-container {
+//   @include background-image('opener');
+//   @include svg-responsive(7rem, 7rem, 100%); // arguments are ($svgwidth, $svgheight, $containerwidth)
+//   margin: 0 auto auto 0;
+//   max-width: 90%;
+// }
 
 // svg#intro_1 {
 //   bottom: 0;

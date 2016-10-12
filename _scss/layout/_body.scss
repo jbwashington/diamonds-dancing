@@ -3,7 +3,6 @@
 
 html {
   background-size: cover;
-
 }
 
 html,
@@ -13,8 +12,9 @@ body {
 }
 
 body {
-  background-color: $black;
-  color: $white;
+  max-height: 100%;
+  background-color: $bg-color;
+  color: $body-color;
   font-family: $body-font;
   tap-highlight-color: $brand-tertiary;
 
@@ -22,10 +22,4 @@ body {
 
 .content {
   font-family: $body-font;
-}
-
-.wrapper {
-  background-color: $black;
-  border-style: solid;
-  border-color: $red;
 }

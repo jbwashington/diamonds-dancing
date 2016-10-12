@@ -5,7 +5,7 @@ a {
   @include transition(color .3s ease);
   color: $red;
 
-  &:hover {
-    color: $magenta;
-  }
+  // &:hover {
+  //   color: $magenta;
+  // }
 }

@@ -1,19 +1,13 @@
 @import 'helpers/variables';
 @import 'helpers/mixins';
 
-
-html {
+body {
+  color: $gray-dark;
+  font-family: inherit;
   font-family: $body-font;
   font-size: $body-size;
-}
-
-body {
-  color: $darkgray;
-  font-family: inherit;
-  font-size: inherit;
   text-shadow: 0 0 1 $gray;
 }
-
 
 h1,
 h2,
@@ -25,7 +19,7 @@ h6 {
 }
 
 h1 {
-  font-size: $h1-size;
+  font: $font-size-h1;
 }
 
 a {
@@ -34,19 +28,19 @@ a {
 }
 
 h2 {
-  font-size: $h2-size;
+  font: $font-size-h2;
 }
 
 h3 {
-  font-size: $h3-size;
+  font: $font-size-h3;
 }
 
 h4 {
-  font-size: $h4-size;
+  font: $font-size-h4;
 }
 
 h6 {
-  font-size: $h6-size;
+  font: $font-size-h6;
 }
 
 
@@ -83,7 +77,7 @@ ol ul {
 }
 
 li {
-  font-size: $body-size;
+  font-size: $font-size-base;
 }
 
 em,
@@ -97,11 +91,11 @@ b {
 }
 
 .bg-primary {
-  background-color: $bg-color;
+  background-color: $body-bg;
 }
 
 .bg-alt {
-  background-color: $brand-tertiary;
+  background-color: $brand-success;
 }
 
 hr {
